@@ -72,7 +72,7 @@ img{max-width:100%;display:block}
 .problem-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-bottom:40px}
 .problem-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius);padding:28px 20px;text-align:center;transition:box-shadow .3s}
 .problem-card:hover{box-shadow:var(--shadow-lg)}
-.problem-emoji{font-size:2.4rem;margin-bottom:12px}
+.problem-icon{margin-bottom:12px;display:flex;justify-content:center}
 .problem-card p{font-size:.95rem;font-weight:500}
 .problem-answer{text-align:center;font-size:1.1rem;font-weight:700;color:var(--blue-600)}
 
@@ -108,7 +108,7 @@ img{max-width:100%;display:block}
 .case-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .case-card{background:var(--gray-50);border:1px solid var(--gray-200);border-radius:var(--radius-lg);padding:28px}
 .case-company{display:flex;align-items:center;gap:12px;margin-bottom:16px}
-.case-logo{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--white);font-weight:800;font-size:1.2rem;flex-shrink:0}
+.case-logo{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--white);font-weight:800;font-size:1.2rem;flex-shrink:0;text-shadow:0 1px 3px rgba(0,0,0,.5)}
 .case-name{font-weight:700;font-size:.9rem}
 .case-industry{font-size:.8rem;color:var(--gray-500)}
 .case-quote{font-size:.9rem;line-height:1.7;color:var(--gray-700);margin-bottom:12px;font-style:italic}
