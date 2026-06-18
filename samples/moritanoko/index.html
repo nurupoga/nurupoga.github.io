@@ -26,6 +26,7 @@
           <li><a href="#features">園の特色</a></li>
           <li><a href="#daily">一日の流れ</a></li>
           <li><a href="#events">年間行事</a></li>
+          <li><a href="#testimonials">保護者の声</a></li>
           <li><a href="#admission">入園案内</a></li>
           <li><a href="#access">アクセス</a></li>
         </ul>
@@ -195,12 +196,25 @@
         <rect x="26" y="28" width="6" height="6" rx="1" fill="#E0F4FA" stroke="#7EC8E3" stroke-width="1"/>
         <rect x="20" y="36" width="8" height="6" rx="1" fill="#A0845C" stroke="#8B7355" stroke-width="1"/>
       </symbol>
+
+      <symbol id="ico-heart" viewBox="0 0 32 32">
+        <path d="M16 28 C16 28, 4 20, 4 12 C4 7, 8 4, 12 6 C14 7, 15 9, 16 11 C17 9, 18 7, 20 6 C24 4, 28 7, 28 12 C28 20, 16 28, 16 28Z" fill="#FFB5C5" stroke="#E8899E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+
+      <symbol id="ico-quote" viewBox="0 0 32 32">
+        <path d="M4 20 C4 14, 8 10, 14 10 L14 14 C10 14, 8 16, 8 20 L14 20 L14 28 L4 28 Z" fill="#FFB5C5" opacity=".5"/>
+        <path d="M18 20 C18 14, 22 10, 28 10 L28 14 C24 14, 22 16, 22 20 L28 20 L28 28 L18 28 Z" fill="#FFB5C5" opacity=".5"/>
+      </symbol>
     </defs>
   </svg>
 
   <main>
     <!-- Hero -->
     <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=1400&h=700&fit=crop&crop=center" alt="" loading="eager">
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
       <div class="hero-deco" aria-hidden="true">
         <svg class="cloud cloud-1" width="120" height="60"><use href="#cloud"/></svg>
         <svg class="cloud cloud-2" width="90" height="45"><use href="#cloud"/></svg>
@@ -233,25 +247,40 @@
         <h2 class="section-title"><svg class="title-icon" width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><use href="#ico-sakura"/></svg> 園の特色</h2>
         <div class="feature-grid">
           <div class="feature-card card-pink">
-            <div class="feature-icon" aria-hidden="true">
-              <svg width="56" height="56" viewBox="0 0 48 48"><use href="#ico-tree-big"/></svg>
+            <div class="feature-img">
+              <img src="https://images.unsplash.com/photo-1472162072942-cd5147eb3902?w=800&h=500&fit=crop&crop=center" alt="子どもたちが自然の中で遊ぶ様子" loading="lazy">
             </div>
-            <h3>自然とあそぶ</h3>
-            <p>園庭の大きなケヤキの木の下で、四季を感じながら外遊び。虫探し、泥んこ遊び、水たまりジャンプ。五感をフルに使って遊びます。</p>
+            <div class="feature-body">
+              <div class="feature-icon" aria-hidden="true">
+                <svg width="48" height="48" viewBox="0 0 48 48"><use href="#ico-tree-big"/></svg>
+              </div>
+              <h3>自然とあそぶ</h3>
+              <p>園庭の大きなケヤキの木の下で、四季を感じながら外遊び。虫探し、泥んこ遊び、水たまりジャンプ。五感をフルに使って遊びます。</p>
+            </div>
           </div>
           <div class="feature-card card-blue">
-            <div class="feature-icon" aria-hidden="true">
-              <svg width="56" height="56" viewBox="0 0 48 48"><use href="#ico-guitar"/></svg>
+            <div class="feature-img">
+              <img src="https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=800&h=500&fit=crop&crop=center" alt="子どもたちが音楽を楽しむ様子" loading="lazy">
             </div>
-            <h3>音楽であそぶ</h3>
-            <p>リトミック、手作り楽器、季節の歌。音楽を通じてリズム感と表現力を育みます。年に一度のミニコンサートはパパママにも大人気。</p>
+            <div class="feature-body">
+              <div class="feature-icon" aria-hidden="true">
+                <svg width="48" height="48" viewBox="0 0 48 48"><use href="#ico-guitar"/></svg>
+              </div>
+              <h3>音楽であそぶ</h3>
+              <p>リトミック、手作り楽器、季節の歌。音楽を通じてリズム感と表現力を育みます。年に一度のミニコンサートはパパママにも大人気。</p>
+            </div>
           </div>
           <div class="feature-card card-green">
-            <div class="feature-icon" aria-hidden="true">
-              <svg width="56" height="56" viewBox="0 0 48 48"><use href="#ico-broccoli"/></svg>
+            <div class="feature-img">
+              <img src="https://images.unsplash.com/photo-1505935428862-770b6f24f629?w=800&h=500&fit=crop&crop=center" alt="食育活動の様子" loading="lazy">
             </div>
-            <h3>食で育つ</h3>
-            <p>給食は園内調理。旬の食材を使い、アレルギーにも個別対応。畑で育てた野菜を収穫して食べる食育プログラムも。</p>
+            <div class="feature-body">
+              <div class="feature-icon" aria-hidden="true">
+                <svg width="48" height="48" viewBox="0 0 48 48"><use href="#ico-broccoli"/></svg>
+              </div>
+              <h3>食で育つ</h3>
+              <p>給食は園内調理。旬の食材を使い、アレルギーにも個別対応。畑で育てた野菜を収穫して食べる食育プログラムも。</p>
+            </div>
           </div>
         </div>
       </div>
@@ -265,57 +294,92 @@
           <div class="timeline-item">
             <div class="timeline-time">7:30</div>
             <div class="timeline-content">
-              <div class="timeline-icon-svg" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 32 32"><use href="#ico-sun"/></svg></div>
-              <h3>登園・自由あそび</h3>
-              <p>おはようございます! 好きなおもちゃで自由にあそびます。</p>
+              <div class="timeline-photo">
+                <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=200&h=200&fit=crop&crop=center" alt="朝のイメージ" loading="lazy">
+              </div>
+              <div class="timeline-text">
+                <div class="timeline-icon-svg" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 32 32"><use href="#ico-sun"/></svg></div>
+                <h3>登園・自由あそび</h3>
+                <p>おはようございます! 好きなおもちゃで自由にあそびます。</p>
+              </div>
             </div>
           </div>
           <div class="timeline-item">
             <div class="timeline-time">9:30</div>
             <div class="timeline-content">
-              <div class="timeline-icon-svg" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 32 32"><use href="#ico-leaf"/></svg></div>
-              <h3>朝の会・おやつ</h3>
-              <p>みんなで歌をうたって、おやつの時間。</p>
+              <div class="timeline-photo">
+                <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=200&h=200&fit=crop&crop=center" alt="朝の会の様子" loading="lazy">
+              </div>
+              <div class="timeline-text">
+                <div class="timeline-icon-svg" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 32 32"><use href="#ico-leaf"/></svg></div>
+                <h3>朝の会・おやつ</h3>
+                <p>みんなで歌をうたって、おやつの時間。</p>
+              </div>
             </div>
           </div>
           <div class="timeline-item">
             <div class="timeline-time">10:00</div>
             <div class="timeline-content">
-              <div class="timeline-icon-svg" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 32 32"><use href="#ico-palette"/></svg></div>
-              <h3>主活動</h3>
-              <p>外あそび、制作、リトミック、お散歩など。年齢に合わせた活動。</p>
+              <div class="timeline-photo">
+                <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=200&h=200&fit=crop&crop=center" alt="外あそびの様子" loading="lazy">
+              </div>
+              <div class="timeline-text">
+                <div class="timeline-icon-svg" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 32 32"><use href="#ico-palette"/></svg></div>
+                <h3>主活動</h3>
+                <p>外あそび、制作、リトミック、お散歩など。年齢に合わせた活動。</p>
+              </div>
             </div>
           </div>
           <div class="timeline-item">
             <div class="timeline-time">11:30</div>
             <div class="timeline-content">
-              <div class="timeline-icon-svg" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 32 32"><use href="#ico-curry"/></svg></div>
-              <h3>給食</h3>
-              <p>園内調理のあたたかい給食。みんなで「いただきます!」</p>
+              <div class="timeline-photo">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=200&h=200&fit=crop&crop=center" alt="給食のイメージ" loading="lazy">
+              </div>
+              <div class="timeline-text">
+                <div class="timeline-icon-svg" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 32 32"><use href="#ico-curry"/></svg></div>
+                <h3>給食</h3>
+                <p>園内調理のあたたかい給食。みんなで「いただきます!」</p>
+              </div>
             </div>
           </div>
           <div class="timeline-item">
             <div class="timeline-time">13:00</div>
             <div class="timeline-content">
-              <div class="timeline-icon-svg" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 32 32"><use href="#ico-sleep"/></svg></div>
-              <h3>お昼寝</h3>
-              <p>静かな音楽の中でぐっすりおやすみ。</p>
+              <div class="timeline-photo">
+                <img src="https://images.unsplash.com/photo-1519340241574-2cec6aef0c01?w=200&h=200&fit=crop&crop=center" alt="お昼寝のイメージ" loading="lazy">
+              </div>
+              <div class="timeline-text">
+                <div class="timeline-icon-svg" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 32 32"><use href="#ico-sleep"/></svg></div>
+                <h3>お昼寝</h3>
+                <p>静かな音楽の中でぐっすりおやすみ。</p>
+              </div>
             </div>
           </div>
           <div class="timeline-item">
             <div class="timeline-time">15:00</div>
             <div class="timeline-content">
-              <div class="timeline-icon-svg" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 32 32"><use href="#ico-cookie"/></svg></div>
-              <h3>おやつ・自由あそび</h3>
-              <p>手作りおやつを食べて、お迎えまで楽しくあそびます。</p>
+              <div class="timeline-photo">
+                <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=200&h=200&fit=crop&crop=center" alt="おやつのイメージ" loading="lazy">
+              </div>
+              <div class="timeline-text">
+                <div class="timeline-icon-svg" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 32 32"><use href="#ico-cookie"/></svg></div>
+                <h3>おやつ・自由あそび</h3>
+                <p>手作りおやつを食べて、お迎えまで楽しくあそびます。</p>
+              </div>
             </div>
           </div>
           <div class="timeline-item">
             <div class="timeline-time">16:00-</div>
             <div class="timeline-content">
-              <div class="timeline-icon-svg" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 32 32"><use href="#ico-sunset"/></svg></div>
-              <h3>降園</h3>
-              <p>今日も楽しかったね。また明日!</p>
+              <div class="timeline-photo">
+                <img src="https://images.unsplash.com/photo-1503431128871-cd250803fa41?w=200&h=200&fit=crop&crop=center" alt="夕方のイメージ" loading="lazy">
+              </div>
+              <div class="timeline-text">
+                <div class="timeline-icon-svg" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 32 32"><use href="#ico-sunset"/></svg></div>
+                <h3>降園</h3>
+                <p>今日も楽しかったね。また明日!</p>
+              </div>
             </div>
           </div>
         </div>
@@ -328,6 +392,9 @@
         <h2 class="section-title"><svg class="title-icon" width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><use href="#ico-ribbon"/></svg> 年間行事</h2>
         <div class="events-grid">
           <div class="event-card">
+            <div class="event-photo">
+              <img src="https://images.unsplash.com/photo-1522383225653-ed111181a951?w=400&h=250&fit=crop&crop=center" alt="桜の風景" loading="lazy">
+            </div>
             <div class="event-season spring">春</div>
             <ul>
               <li><svg class="list-icon" width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><use href="#ico-sakura"/></svg> 入園式・進級式</li>
@@ -336,6 +403,9 @@
             </ul>
           </div>
           <div class="event-card">
+            <div class="event-photo">
+              <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=400&h=250&fit=crop&crop=center" alt="夏の水遊び" loading="lazy">
+            </div>
             <div class="event-season summer">夏</div>
             <ul>
               <li><svg class="list-icon" width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><use href="#ico-sun"/></svg> プール開き</li>
@@ -344,6 +414,9 @@
             </ul>
           </div>
           <div class="event-card">
+            <div class="event-photo">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=250&fit=crop&crop=center" alt="秋の紅葉" loading="lazy">
+            </div>
             <div class="event-season autumn">秋</div>
             <ul>
               <li><svg class="list-icon" width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><use href="#ico-autumn-leaf"/></svg> 運動会</li>
@@ -352,6 +425,9 @@
             </ul>
           </div>
           <div class="event-card">
+            <div class="event-photo">
+              <img src="https://images.unsplash.com/photo-1457269449834-928af64c684d?w=400&h=250&fit=crop&crop=center" alt="冬の雪景色" loading="lazy">
+            </div>
             <div class="event-season winter">冬</div>
             <ul>
               <li><svg class="list-icon" width="16" height="16" viewBox="0 0 32 32" aria-hidden="true"><use href="#ico-snowflake"/></svg> クリスマス会</li>
@@ -363,9 +439,67 @@
       </div>
     </section>
 
-    <!-- Admission -->
-    <section class="section section-pastel" id="admission">
+    <!-- Testimonials -->
+    <section class="section section-testimonial" id="testimonials">
       <div class="container">
+        <h2 class="section-title"><svg class="title-icon" width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><use href="#ico-heart"/></svg> 保護者の声</h2>
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-quote" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32"><use href="#ico-quote"/></svg>
+            </div>
+            <p class="testimonial-text">入園して半年、毎日「今日は何するの?」と楽しみに通っています。自然の中でたくさん遊ばせてもらえるので、体力もつきました。先生方の温かい雰囲気に親も安心しています。</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face" alt="" loading="lazy">
+              </div>
+              <div class="testimonial-info">
+                <span class="testimonial-name">A.K さん</span>
+                <span class="testimonial-detail">3歳児クラス保護者</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-quote" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32"><use href="#ico-quote"/></svg>
+            </div>
+            <p class="testimonial-text">給食がとてもおいしいらしく、家では食べない野菜も園では完食しているそうです。食育のおかげで「これ畑で採れるんだよ」と教えてくれるようになりました。</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="" loading="lazy">
+              </div>
+              <div class="testimonial-info">
+                <span class="testimonial-name">T.M さん</span>
+                <span class="testimonial-detail">4歳児クラス保護者</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-quote" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32"><use href="#ico-quote"/></svg>
+            </div>
+            <p class="testimonial-text">リトミックや手作り楽器の活動が大好きで、家でも歌いながら踊っています。ミニコンサートでの成長した姿に感動しました。兄弟でお世話になっています。</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face" alt="" loading="lazy">
+              </div>
+              <div class="testimonial-info">
+                <span class="testimonial-name">S.Y さん</span>
+                <span class="testimonial-detail">2歳児・5歳児クラス保護者</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Admission -->
+    <section class="section section-admission" id="admission">
+      <div class="admission-bg" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1510936111840-65e151ad71bb?w=1200&h=600&fit=crop&crop=center" alt="" loading="lazy">
+      </div>
+      <div class="admission-overlay" aria-hidden="true"></div>
+      <div class="container admission-container">
         <h2 class="section-title"><svg class="title-icon" width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><use href="#ico-book"/></svg> 入園案内</h2>
         <div class="admission-grid">
           <div class="admission-card">
@@ -378,7 +512,7 @@
           </div>
           <div class="admission-card">
             <h3>開園時間</h3>
-            <p>月〜土 7:30 - 19:30<br>（延長保育 18:30 - 19:30）</p>
+            <p>月〜土 7:30 - 19:30<br>(延長保育 18:30 - 19:30)</p>
           </div>
           <div class="admission-card">
             <h3>見学について</h3>
