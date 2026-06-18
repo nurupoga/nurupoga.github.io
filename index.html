@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nurupoga - Software Engineer / Freelance</title>
+  <meta name="description" content="Webサイト制作・モバイルアプリ開発・AI開発を承るフリーランスエンジニア nurupoga のポートフォリオサイトです。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="#" class="header-logo">nurupoga</a>
+      <nav>
+        <ul class="header-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="about" class="hero">
+    <span class="hero-label">Software Engineer / Freelance</span>
+    <h1>nurupoga</h1>
+    <p class="hero-catch">Webサイト制作・アプリ開発を承ります。</p>
+    <p class="hero-bio">
+      ソフトウェアエンジニア歴10年以上。
+      フリーランスとしてWebサイト制作、モバイルアプリ開発、クラウドインフラ構築などを手がけています。
+      企画から設計・実装・運用まで一気通貫で対応可能です。
+    </p>
+  </section>
+
+  <!-- Services -->
+  <section class="section">
+    <h2 class="section-title">できること</h2>
+    <p class="section-subtitle">幅広い技術領域をカバーしています。</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">&#x1f310;</div>
+        <h3>Webサイト制作</h3>
+        <p>企業サイト、LP、ランディングページ、ランキングサイトなど。レスポンシブ対応・SEO考慮。</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">&#x1f4f1;</div>
+        <h3>モバイルアプリ開発</h3>
+        <p>iOS / Android 対応のネイティブ・クロスプラットフォームアプリ。Flutter / Swift。</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">&#x1f916;</div>
+        <h3>AI・LLM関連開発</h3>
+        <p>大規模言語モデルの活用、ファインチューニング、データパイプライン構築。</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">&#x2601;&#xfe0f;</div>
+        <h3>クラウドインフラ構築</h3>
+        <p>AWS / GCP / Cloudflare を活用したインフラ設計・CI/CD構築・運用。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Works -->
+  <section id="works" class="works-bg">
+    <div class="section">
+      <h2 class="section-title">制作実績</h2>
+      <p class="section-subtitle">これまでに手がけたプロジェクトの一部です。</p>
+      <!-- HP制作 -->
+      <h3 class="works-category-title">HP制作</h3>
+      <div class="works-grid">
+        <div class="work-card">
+          <div class="work-thumb work-thumb--web">
+            <span class="work-thumb-label">PROPERTY</span>
+            <span class="work-thumb-type">Web</span>
+          </div>
+          <div class="work-body">
+            <h3>不動産ランキングサイト</h3>
+            <p>杉並・武蔵野・練馬エリアの不動産物件をスコアリング・比較するランキングサイト。データ収集から分析、表示まで自動化。</p>
+            <div class="work-tags">
+              <span class="work-tag">Python</span>
+              <span class="work-tag">Cloudflare Pages</span>
+              <span class="work-tag">GitHub Actions</span>
+            </div>
+            <a href="https://property-report.pages.dev" class="work-link" target="_blank" rel="noopener">
+              サイトを見る &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- アプリ開発 -->
+      <h3 class="works-category-title">アプリ開発</h3>
+      <div class="works-grid">
+        <div class="work-card">
+          <div class="work-thumb work-thumb--mobile">
+            <span class="work-thumb-label">FILESYNC</span>
+            <span class="work-thumb-type">Mobile App</span>
+          </div>
+          <div class="work-body">
+            <h3>FileSync</h3>
+            <p>Google Drive, Dropbox, OneDrive, Box等の複数クラウドストレージを統一管理するファイルマネージャーアプリ。</p>
+            <div class="work-tags">
+              <span class="work-tag">Flutter</span>
+              <span class="work-tag">Dart</span>
+              <span class="work-tag">OAuth</span>
+              <span class="work-tag">iOS</span>
+              <span class="work-tag">Android</span>
+            </div>
+            <span class="work-status">リリース準備中</span>
+          </div>
+        </div>
+
+        <div class="work-card">
+          <div class="work-thumb work-thumb--desktop">
+            <span class="work-thumb-label">CLAUDEBAR</span>
+            <span class="work-thumb-type">macOS App</span>
+          </div>
+          <div class="work-body">
+            <h3>ClaudeBar</h3>
+            <p>AI使用量をメニューバーからリアルタイムに監視できるmacOSネイティブアプリ。</p>
+            <div class="work-tags">
+              <span class="work-tag">Swift</span>
+              <span class="work-tag">SwiftUI</span>
+              <span class="work-tag">macOS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AIシステム -->
+      <h3 class="works-category-title">AIシステム</h3>
+      <div class="works-grid">
+        <div class="work-card work-card--mock">
+          <div class="work-thumb work-thumb--ai">
+            <span class="work-thumb-label">AI</span>
+            <span class="work-thumb-type">AI / ML</span>
+          </div>
+          <div class="work-body">
+            <h3>Coming Soon</h3>
+            <p>AI活用システムの開発実績を準備中です。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <h2 class="section-title">技術スタック</h2>
+    <p class="section-subtitle">主に使用している技術です。</p>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Mobile</h3>
+        <ul class="skill-list">
+          <li>Flutter / Dart</li>
+          <li>Swift / SwiftUI</li>
+          <li>React Native</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Web</h3>
+        <ul class="skill-list">
+          <li>HTML / CSS / JavaScript</li>
+          <li>Python</li>
+          <li>Node.js</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Cloud</h3>
+        <ul class="skill-list">
+          <li>AWS</li>
+          <li>GCP</li>
+          <li>Cloudflare</li>
+          <li>Oracle Cloud</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>AI / ML</h3>
+        <ul class="skill-list">
+          <li>LLM</li>
+          <li>ファインチューニング</li>
+          <li>データパイプライン</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Tools</h3>
+        <ul class="skill-list">
+          <li>Git / GitHub</li>
+          <li>GitHub Actions</li>
+          <li>Docker</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact-bg">
+    <div class="section">
+      <h2 class="section-title">お問い合わせ</h2>
+      <p class="section-subtitle">お仕事のご相談はお気軽にどうぞ。</p>
+      <div class="contact-box">
+        <p>Webサイト制作・アプリ開発のご相談は<br>GitHubからお気軽にお問い合わせください。</p>
+        <a href="https://github.com/nurupoga" class="contact-link" target="_blank" rel="noopener">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    &copy; nurupoga
+  </footer>
+
+</body>
+</html>
