@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index,follow">
+<title>Privacy Policy — FileSync</title>
+<link rel="canonical" href="https://nurupoga.net/filesync/privacy_en.html">
+<link rel="stylesheet" href="../style.css">
+<style>
+.legal-body {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+.legal-body h1 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+.legal-body .meta {
+  font-size: 0.8125rem;
+  color: var(--color-text-light);
+  margin-bottom: 1.5rem;
+}
+.legal-body .notice {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  font-size: 0.875rem;
+  color: var(--color-text);
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+.legal-body h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.375rem;
+  border-bottom: 1px solid var(--color-border);
+}
+.legal-body h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.legal-body p {
+  font-size: 0.9375rem;
+  line-height: 1.8;
+  margin-bottom: 0.75rem;
+}
+.legal-body ul {
+  margin: 0.5rem 0 1rem 1.25rem;
+  font-size: 0.9375rem;
+  line-height: 1.8;
+}
+.legal-body ul li {
+  margin-bottom: 0.25rem;
+}
+.legal-body a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+.legal-body a:hover {
+  text-decoration: underline;
+}
+.lang-switch {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+.lang-switch a {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--color-text-light);
+  text-decoration: none;
+  padding: 0.25rem 0.625rem;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+.lang-switch a:hover {
+  background: var(--color-bg-alt);
+}
+.lang-switch a.active {
+  color: var(--color-primary);
+  background: #eff6ff;
+  font-weight: 600;
+}
+.changelog {
+  margin-top: 2.5rem;
+  padding: 1rem 1.25rem;
+  background: var(--color-bg-alt);
+  border-radius: 8px;
+  font-size: 0.8125rem;
+  color: var(--color-text-light);
+}
+.changelog strong {
+  color: var(--color-text);
+}
+.changelog ul {
+  margin: 0.5rem 0 0 1.25rem;
+  font-size: 0.8125rem;
+}
+.legal-footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+  font-size: 0.8125rem;
+  color: var(--color-text-light);
+}
+.legal-footer a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+.legal-footer a:hover {
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="/" class="header-logo">nurupoga</a>
+    <nav>
+      <ul class="header-nav">
+        <li><a href="/filesync/">FileSync</a></li>
+        <li><a href="/filesync/privacy.html">Privacy</a></li>
+        <li><a href="/filesync/terms.html">Terms</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="legal-body">
+  <nav class="lang-switch" aria-label="Language">
+    <a href="./privacy.html">日本語</a>
+    <a href="./privacy_en.html" class="active">English</a>
+  </nav>
+
+  <h1>FileSync Privacy Policy</h1>
+  <p class="meta">Last updated: June 15, 2026 / First published: May 3, 2026</p>
+
+  <div class="notice">
+    <strong>Summary:</strong> FileSync does not use advertising or tracking, and does not send file contents or cloud credentials to the developer's servers.
+    Credentials and metadata for cloud services are generally stored on your device (Apple Keychain / Android KeyStore).
+    To improve quality and investigate failures, crash reports and diagnostic logs may be sent to Sentry. File contents, credentials, passwords, and access tokens are masked and are not intentionally sent.
+  </div>
+
+  <h2>1. Introduction</h2>
+  <p>
+    FileSync ("the App") treats user privacy as its highest priority.
+    This Privacy Policy describes what information the App handles, and how.
+    The App is a file manager that integrates Google Drive, Dropbox, WebDAV-compatible storage (Koofr, pCloud, and others), SFTP / FTP servers, USB storage, and on-device local storage in a single interface.
+  </p>
+
+  <h2>2. Information Handled</h2>
+  <h3>2.1 Information the App does NOT collect</h3>
+  <p>The App does not collect any of the following on any server:</p>
+  <ul>
+    <li>Personally identifiable information (name, address, phone number, email address, etc.)</li>
+    <li>The contents of files you operate on</li>
+    <li>Location data</li>
+    <li>Advertising identifiers (IDFA / GAID)</li>
+    <li>Usage history or behavioral analytics for advertising purposes</li>
+  </ul>
+  <p>The App does not use third-party analytics platforms for advertising or behavioral tracking purposes (Google Analytics, Firebase Analytics, Amplitude, etc.).</p>
+
+  <h3>2.2 Crash Reports and Diagnostic Logs</h3>
+  <p>
+    The App may use Sentry to send crash reports and diagnostic logs for quality improvement, bug investigation, and crash analysis.
+    These reports may include error details, device / OS / app version, timestamps, stack traces, and technical state related to screens or features.
+    File contents, cloud service credentials, passwords, access tokens, and SSH keys are masked by the App and are not intentionally sent.
+  </p>
+
+  <h3>2.3 Information stored only on your device</h3>
+  <p>The following information is stored only on your device. It is never transmitted to the developer's servers.</p>
+  <ul>
+    <li><strong>OAuth access tokens / refresh tokens</strong> for each cloud service</li>
+    <li><strong>Connection details and credentials</strong> (username, password, SSH key) for WebDAV / SFTP / FTP</li>
+    <li>Temporary cache of file listings (metadata)</li>
+    <li>Sync settings, view preferences, and favorites</li>
+    <li>History of backup and transfer jobs</li>
+  </ul>
+  <p>
+    On iOS this information is stored in the <strong>Apple Keychain</strong> and the app's encrypted private storage; on Android, it is stored in the <strong>Android KeyStore</strong> and encrypted internal storage. The OS isolates this data per app.
+  </p>
+
+  <h3>2.4 Information transmitted externally by user action</h3>
+  <p>
+    When you use backup, upload, or transfer features, target files are sent to the destinations <em>you</em> specify (cloud storage services, WebDAV / SFTP / FTP servers, etc.).
+    These are <strong>direct transmissions to services you have explicitly chosen</strong>; they do not pass through the developer's servers.
+  </p>
+
+  <h2>3. Third-Party Services</h2>
+  <p>
+    The App communicates <strong>under your account</strong> with the services you choose to connect. The developer only acts as a client; credentials are never sent to the developer's servers.
+  </p>
+  <ul>
+    <li>Google Drive (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google LLC Privacy Policy</a>)</li>
+    <li>Dropbox (<a href="https://www.dropbox.com/privacy" target="_blank" rel="noopener">Dropbox Privacy Policy</a>)</li>
+    <li>pCloud (<a href="https://www.pcloud.com/help/privacy-policy" target="_blank" rel="noopener">pCloud Privacy Policy</a>)</li>
+    <li>WebDAV / SFTP / FTP servers (any server you specify)</li>
+  </ul>
+  <p>Data handling at these services is governed by each provider's privacy policy.</p>
+
+  <h2>4. OS Permissions</h2>
+  <p>The App requests the following OS permissions only when you use the corresponding feature:</p>
+  <ul>
+    <li><strong>Photo library</strong>: for automatic photo/video backup</li>
+    <li><strong>Local network</strong>: for WebDAV / SFTP / FTP server connections</li>
+    <li><strong>Face ID / Touch ID / biometrics</strong>: for the app lock</li>
+    <li><strong>File sharing / document browser</strong>: for file import/export</li>
+    <li><strong>Background processing</strong>: to continue transfers while the app is closed</li>
+    <li><strong>External storage (Android)</strong>: to access USB / SD card content</li>
+  </ul>
+
+  <h2>5. Cookies and Tracking</h2>
+  <p>The App does not use cookies. None of the following are present:</p>
+  <ul>
+    <li>Collection of advertising identifiers (IDFA / GAID)</li>
+    <li>Cross-site or cross-app tracking</li>
+    <li>Connections to third-party ad networks</li>
+    <li>Tracking subject to App Tracking Transparency (ATT)</li>
+  </ul>
+
+  <h2>6. Security</h2>
+  <ul>
+    <li>Credentials and tokens are stored in iOS Keychain / Android KeyStore, protected by the OS secure enclave</li>
+    <li>All network communications use encrypted protocols such as HTTPS / SSH / TLS</li>
+    <li>The app supports a biometric app lock (Face ID / Touch ID / fingerprint)</li>
+    <li>SFTP supports public-key authentication</li>
+  </ul>
+
+  <h2>7. Children's Privacy</h2>
+  <p>
+    The App does not knowingly collect personal information from children under 13.
+    Because the App does not collect any personal information at all, no information is recorded on the developer's side regardless of the user's age.
+  </p>
+
+  <h2>8. International Data Transfers</h2>
+  <p>
+    The App itself does not transmit data to the developer's servers.
+    However, the cloud services you choose (e.g. Google Drive) may store data outside your country. See each service's privacy policy for details.
+  </p>
+
+  <h2>9. GDPR / CCPA</h2>
+  <p>
+    Because the App does not collect or store personal data on the developer's servers, the developer is generally not a "data controller" under GDPR or a "business" under CCPA.
+    You can delete locally stored credentials by uninstalling the app or by using the disconnect option in the app's settings.
+  </p>
+
+  <h2>10. Data Deletion</h2>
+  <h3>10.1 Credentials and connection settings</h3>
+  <ul>
+    <li>Logging out / disconnecting in each service's screen removes the corresponding tokens from the device</li>
+    <li>Uninstalling the app removes all app data except Keychain / KeyStore items</li>
+    <li>Keychain / KeyStore items can also be removed from the OS settings</li>
+  </ul>
+  <h3>10.2 Files already uploaded</h3>
+  <p>Delete them directly from each cloud / server's management UI or official app. The App also supports delete operations.</p>
+
+  <h2>11. Changes to This Policy</h2>
+  <p>
+    Material changes will be announced via in-app notification, App Store / Google Play release notes, and an update to the "Last updated" date on this page.
+  </p>
+
+  <h2>12. Contact</h2>
+  <p>For privacy-related questions, please file an issue on the App's GitHub repository.</p>
+  <ul>
+    <li>Contact: GitHub Issues</li>
+    <li>Operator: FileSync development team (independent developer)</li>
+  </ul>
+
+  <h2>13. Summary</h2>
+  <p>FileSync is built on the principles of "local-first" and "privacy by design":</p>
+  <ul>
+    <li>No credentials are sent to the developer's servers</li>
+    <li>File contents do not pass through the developer's servers</li>
+    <li>Credentials are encrypted in Keychain / KeyStore on the device</li>
+    <li>No data is sold or provided to third parties</li>
+    <li>No ads or tracking</li>
+  </ul>
+
+  <div class="changelog">
+    <strong>Changelog</strong>
+    <ul>
+      <li>2026-06-15: Added explanation of crash reports and diagnostic logs through Sentry</li>
+      <li>2026-05-03: First published</li>
+    </ul>
+  </div>
+
+  <div class="legal-footer">
+    <p><a href="/filesync/">FileSync</a> / <a href="./terms_en.html">Terms of Service</a></p>
+  </div>
+</div>
+
+<footer class="footer">
+  &copy; nurupoga
+</footer>
+
+</body>
+</html>

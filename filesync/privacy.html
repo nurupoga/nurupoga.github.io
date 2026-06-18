@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index,follow">
+<title>プライバシーポリシー — FileSync</title>
+<link rel="canonical" href="https://nurupoga.net/filesync/privacy.html">
+<link rel="stylesheet" href="../style.css">
+<style>
+.legal-body {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+.legal-body h1 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+.legal-body .meta {
+  font-size: 0.8125rem;
+  color: var(--color-text-light);
+  margin-bottom: 1.5rem;
+}
+.legal-body .notice {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  font-size: 0.875rem;
+  color: var(--color-text);
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+.legal-body h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.375rem;
+  border-bottom: 1px solid var(--color-border);
+}
+.legal-body h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.legal-body p {
+  font-size: 0.9375rem;
+  line-height: 1.8;
+  margin-bottom: 0.75rem;
+}
+.legal-body ul {
+  margin: 0.5rem 0 1rem 1.25rem;
+  font-size: 0.9375rem;
+  line-height: 1.8;
+}
+.legal-body ul li {
+  margin-bottom: 0.25rem;
+}
+.legal-body a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+.legal-body a:hover {
+  text-decoration: underline;
+}
+.lang-switch {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+.lang-switch a {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--color-text-light);
+  text-decoration: none;
+  padding: 0.25rem 0.625rem;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+.lang-switch a:hover {
+  background: var(--color-bg-alt);
+}
+.lang-switch a.active {
+  color: var(--color-primary);
+  background: #eff6ff;
+  font-weight: 600;
+}
+.changelog {
+  margin-top: 2.5rem;
+  padding: 1rem 1.25rem;
+  background: var(--color-bg-alt);
+  border-radius: 8px;
+  font-size: 0.8125rem;
+  color: var(--color-text-light);
+}
+.changelog strong {
+  color: var(--color-text);
+}
+.changelog ul {
+  margin: 0.5rem 0 0 1.25rem;
+  font-size: 0.8125rem;
+}
+.legal-footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+  font-size: 0.8125rem;
+  color: var(--color-text-light);
+}
+.legal-footer a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+.legal-footer a:hover {
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="/" class="header-logo">nurupoga</a>
+    <nav>
+      <ul class="header-nav">
+        <li><a href="/filesync/">FileSync</a></li>
+        <li><a href="/filesync/privacy.html">Privacy</a></li>
+        <li><a href="/filesync/terms.html">Terms</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="legal-body">
+  <nav class="lang-switch" aria-label="Language">
+    <a href="./privacy.html" class="active">日本語</a>
+    <a href="./privacy_en.html">English</a>
+  </nav>
+
+  <h1>FileSync プライバシーポリシー</h1>
+  <p class="meta">最終更新日: 2026年6月15日 / 初版発行: 2026年5月3日</p>
+
+  <div class="notice">
+    <strong>要約:</strong> FileSync は広告・追跡を行わず、ファイル本体やクラウド認証情報を開発者のサーバーへ送信しません。
+    各クラウドサービスへの認証情報やファイルのメタデータは、原則としてあなたの端末内（Apple Keychain / Android KeyStore など）に保存されます。
+    アプリの品質改善と障害調査のため、クラッシュレポートおよび診断ログを Sentry に送信する場合がありますが、ファイル本体・認証情報・パスワードは送信しないようマスキング処理を行います。
+  </div>
+
+  <h2>1. はじめに</h2>
+  <p>
+    FileSync(以下「本アプリ」)は、ユーザーのプライバシーを最重要視しています。
+    本プライバシーポリシーは、本アプリがどのような情報をどのように取り扱うかを説明します。
+    本アプリは、Google Drive / Dropbox / WebDAV 対応ストレージ(Koofr / pCloud 等)、SFTP / FTP サーバー、USB ストレージ、端末内ローカルストレージを統合管理するファイルマネージャーです。
+  </p>
+
+  <h2>2. 収集する情報</h2>
+  <h3>2.1 本アプリが「収集しない」情報</h3>
+  <p>本アプリは、以下のいかなる情報もサーバー側で収集しません。</p>
+  <ul>
+    <li>個人を特定できる情報(氏名・住所・電話番号・メールアドレス等)</li>
+    <li>操作したファイルの本体データ</li>
+    <li>位置情報</li>
+    <li>広告ID等のトラッキング識別子(IDFA / GAID)</li>
+    <li>利用履歴・行動アナリティクス</li>
+    <li>広告目的の利用履歴・行動アナリティクス</li>
+  </ul>
+  <p>本アプリは広告・行動分析目的の外部アナリティクス基盤(Google Analytics / Firebase Analytics / Amplitude 等)を使用していません。</p>
+
+  <h3>2.2 クラッシュレポート・診断ログ</h3>
+  <p>
+    本アプリは、品質改善、不具合調査、クラッシュ原因の特定のため、Sentry を使用してクラッシュレポートおよび診断ログを送信する場合があります。
+    送信される情報には、エラー内容、端末・OS・アプリバージョン、発生時刻、スタックトレース、画面・機能の状態に関する技術情報が含まれる場合があります。
+    ファイル本体、クラウドサービスの認証情報、パスワード、アクセストークン、SSH鍵は送信しないよう、アプリ内でマスキング処理を行います。
+  </p>
+
+  <h3>2.3 端末内に保存される情報</h3>
+  <p>
+    以下の情報はあなたの端末内にのみ保存されます。開発者のサーバーには送信されません。
+  </p>
+  <ul>
+    <li>各クラウドサービスの <strong>OAuth アクセストークン / リフレッシュトークン</strong></li>
+    <li>WebDAV / SFTP / FTP の <strong>接続先情報・認証情報(ユーザー名・パスワード・SSH鍵)</strong></li>
+    <li>ファイル一覧(メタデータ)の一時キャッシュ</li>
+    <li>同期設定・表示設定・お気に入り</li>
+    <li>バックアップ・転送ジョブの履歴</li>
+  </ul>
+  <p>
+    これらの情報は、iOS では <strong>Apple Keychain</strong> および暗号化されたアプリ専用ストレージに、Android では <strong>Android KeyStore</strong> および暗号化された内部ストレージに保存され、OSの保護機構によってアプリ単位で隔離されます。
+  </p>
+
+  <h3>2.4 ユーザー操作により外部送信される情報</h3>
+  <p>
+    ユーザーがバックアップ・アップロード・転送機能を使用した場合に限り、対象ファイルがユーザー自身が指定した送信先(クラウドストレージ・WebDAV / SFTP / FTP サーバー等)へ送信されます。
+    これらは <strong>ユーザーが明示的に選択したサービスとの直接通信</strong>であり、開発者のサーバーを経由しません。
+  </p>
+
+  <h2>3. 第三者サービス</h2>
+  <p>
+    本アプリは、ユーザーが接続を選択した以下のサービスと <strong>ユーザー名義で直接通信</strong>します。本アプリ開発者は、これらのサービスにユーザーの代理として接続するのみで、認証情報を開発者サーバーに送信することはありません。
+  </p>
+  <ul>
+    <li>Google Drive(<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google LLC のプライバシーポリシー</a>)</li>
+    <li>Dropbox(<a href="https://www.dropbox.com/privacy" target="_blank" rel="noopener">Dropbox のプライバシーポリシー</a>)</li>
+    <li>pCloud(<a href="https://www.pcloud.com/help/privacy-policy" target="_blank" rel="noopener">pCloud のプライバシーポリシー</a>)</li>
+    <li>WebDAV / SFTP / FTP サーバー(ユーザーが指定する任意のサーバー)</li>
+  </ul>
+  <p>これらのサービスにおけるデータの取り扱いは、それぞれのサービス提供者のプライバシーポリシーに従います。</p>
+
+  <h2>4. アクセス権限</h2>
+  <p>本アプリが要求する OS 権限と、その用途は以下のとおりです。各権限は、対応する機能を使用する場合にのみ要求され、機能を使用しない限り収集・利用されません。</p>
+  <ul>
+    <li><strong>写真ライブラリ</strong>: 写真・動画の自動バックアップ機能のため</li>
+    <li><strong>ローカルネットワーク</strong>: WebDAV / SFTP / FTP サーバー接続のため</li>
+    <li><strong>Face ID / Touch ID / 生体認証</strong>: アプリロック機能のため</li>
+    <li><strong>ファイル共有・ドキュメントブラウザ</strong>: ファイルのインポート・エクスポートのため</li>
+    <li><strong>バックグラウンド処理</strong>: アプリを閉じている間の転送継続のため</li>
+    <li><strong>外部ストレージ(Android)</strong>: USB / SDカード等のローカルファイルアクセスのため</li>
+  </ul>
+
+  <h2>5. Cookie・トラッキング</h2>
+  <p>本アプリは Cookie を使用しません。また、以下の機能を一切使用していません。</p>
+  <ul>
+    <li>広告識別子(IDFA / GAID)の収集</li>
+    <li>クロスサイト・クロスアプリのトラッキング</li>
+    <li>第三者広告ネットワークへの接続</li>
+    <li>App Tracking Transparency(ATT)対象の追跡行為</li>
+  </ul>
+
+  <h2>6. セキュリティ</h2>
+  <ul>
+    <li>認証情報・トークンは iOS Keychain / Android KeyStore に保存され、OS のセキュアエンクレーブで保護されます</li>
+    <li>ネットワーク通信はすべて HTTPS / SSH / TLS 等の暗号化プロトコルを使用します</li>
+    <li>生体認証(Face ID / Touch ID / 指紋)によるアプリロック機能を提供します</li>
+    <li>SFTP は公開鍵認証にも対応します</li>
+  </ul>
+
+  <h2>7. 子供のプライバシー</h2>
+  <p>
+    本アプリは13歳未満の子供から意図的に個人情報を収集することはありません。
+    そもそも本アプリは年齢を含むあらゆる個人情報を収集していないため、年齢に関わらず、開発者側で個人情報が記録されることはありません。
+  </p>
+
+  <h2>8. 国際的なデータ転送</h2>
+  <p>
+    本アプリ自体はデータを開発者サーバーに送信しません。
+    ただし、ユーザーが選択したクラウドサービス(Google Drive 等)は海外にデータを保管する場合があります。詳細は各サービスのプライバシーポリシーを参照してください。
+  </p>
+
+  <h2>9. GDPR / CCPA への対応</h2>
+  <p>
+    本アプリは個人データを開発者サーバーで収集・保管しないため、原則として GDPR におけるデータコントローラー、CCPA における事業者には該当しません。
+    ユーザーはアプリのアンインストール、または各設定画面からの接続解除により、端末内に保存された認証情報を削除できます。
+  </p>
+
+  <h2>10. データの削除</h2>
+  <h3>10.1 認証情報・接続設定</h3>
+  <ul>
+    <li>各サービスの「ログアウト」または「接続解除」操作で、対応するトークンが端末から削除されます</li>
+    <li>アプリをアンインストールすると、Keychain / KeyStore を除くすべてのアプリデータが削除されます</li>
+    <li>Keychain / KeyStore 内の項目は OS の設定からも削除可能です</li>
+  </ul>
+  <h3>10.2 アップロード済みのファイル</h3>
+  <p>
+    各クラウド/サーバー側の管理画面または公式アプリから直接削除してください。本アプリ内からの削除操作にも対応しています。
+  </p>
+
+  <h2>11. プライバシーポリシーの変更</h2>
+  <p>
+    本プライバシーポリシーに重要な変更がある場合は、アプリ内通知または App Store / Google Play のアップデート情報、および本ページの「最終更新日」の更新によりお知らせします。
+  </p>
+
+  <h2>12. お問い合わせ</h2>
+  <p>
+    プライバシーに関するご質問やご不明な点がございましたら、本アプリの GitHub リポジトリの Issues よりお問い合わせください。
+  </p>
+  <ul>
+    <li>連絡窓口: GitHub Issues</li>
+    <li>運営: FileSync 開発チーム(個人開発者)</li>
+  </ul>
+
+  <h2>13. まとめ</h2>
+  <p>FileSync は「ローカルファースト・プライバシー・バイ・デザイン」の原則に基づいて開発されています。</p>
+  <ul>
+    <li>開発者サーバーに認証情報を送信しません</li>
+    <li>ファイル本体は開発者サーバーを経由しません</li>
+    <li>認証情報は端末内 Keychain / KeyStore で暗号化保護</li>
+    <li>第三者へのデータ販売・提供は一切ありません</li>
+    <li>広告・追跡なし</li>
+  </ul>
+
+  <div class="changelog">
+    <strong>改訂履歴</strong>
+    <ul>
+      <li>2026-06-15: Sentry によるクラッシュレポート・診断ログの説明を追加</li>
+      <li>2026-05-03: 初版公開</li>
+    </ul>
+  </div>
+
+  <div class="legal-footer">
+    <p><a href="/filesync/">FileSync トップへ</a> / <a href="./terms.html">利用規約</a></p>
+  </div>
+</div>
+
+<footer class="footer">
+  &copy; nurupoga
+</footer>
+
+</body>
+</html>
