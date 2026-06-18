@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>みたか森のこ保育園 - みんなの笑顔が咲く場所</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a href="https://nurupoga.net" class="logo">
+        <span class="logo-icon" aria-hidden="true">&#127795;</span>
+        みたか森のこ保育園
+      </a>
+      <nav class="nav" aria-label="メインナビゲーション">
+        <ul class="nav-list">
+          <li><a href="#features">園の特色</a></li>
+          <li><a href="#daily">一日の流れ</a></li>
+          <li><a href="#events">年間行事</a></li>
+          <li><a href="#admission">入園案内</a></li>
+          <li><a href="#access">アクセス</a></li>
+        </ul>
+        <button class="hamburger" aria-label="メニューを開く" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SVG Decorations -->
+  <svg class="deco-svg" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <symbol id="cloud" viewBox="0 0 120 60">
+        <ellipse cx="60" cy="40" rx="50" ry="18" fill="currentColor"/>
+        <ellipse cx="35" cy="32" rx="28" ry="22" fill="currentColor"/>
+        <ellipse cx="75" cy="30" rx="32" ry="24" fill="currentColor"/>
+        <ellipse cx="55" cy="25" rx="25" ry="20" fill="currentColor"/>
+      </symbol>
+      <symbol id="star" viewBox="0 0 24 24">
+        <polygon points="12,2 15,9 22,9 16,14 18,22 12,17 6,22 8,14 2,9 9,9" fill="currentColor"/>
+      </symbol>
+      <symbol id="tree" viewBox="0 0 60 100">
+        <rect x="25" y="65" width="10" height="30" rx="3" fill="#a0845c"/>
+        <ellipse cx="30" cy="40" rx="25" ry="35" fill="currentColor"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-deco" aria-hidden="true">
+        <svg class="cloud cloud-1" width="120" height="60"><use href="#cloud"/></svg>
+        <svg class="cloud cloud-2" width="90" height="45"><use href="#cloud"/></svg>
+        <svg class="cloud cloud-3" width="100" height="50"><use href="#cloud"/></svg>
+        <svg class="star star-1" width="24" height="24"><use href="#star"/></svg>
+        <svg class="star star-2" width="18" height="18"><use href="#star"/></svg>
+        <svg class="star star-3" width="20" height="20"><use href="#star"/></svg>
+        <svg class="tree tree-1" width="60" height="100"><use href="#tree"/></svg>
+        <svg class="tree tree-2" width="45" height="75"><use href="#tree"/></svg>
+      </div>
+      <div class="hero-content">
+        <div class="hero-badge">&#127793; 認可保育園</div>
+        <h1 class="hero-title">
+          みんなの<span class="highlight">笑顔</span>が<br>
+          咲く場所
+        </h1>
+        <p class="hero-sub">のびのび育つ。わくわく学ぶ。<br>森のこで一緒に大きくなろう。</p>
+        <a href="https://nurupoga.net" class="btn btn-primary">入園について &#10132;</a>
+      </div>
+      <div class="hero-wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path d="M0,80 C360,120 720,40 1080,80 C1260,100 1380,60 1440,80 L1440,120 L0,120 Z" fill="#ffffff"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section" id="features">
+      <div class="container">
+        <h2 class="section-title"><span class="title-emoji">&#127800;</span> 園の特色</h2>
+        <div class="feature-grid">
+          <div class="feature-card card-pink">
+            <div class="feature-emoji" aria-hidden="true">&#127795;</div>
+            <h3>自然とあそぶ</h3>
+            <p>園庭の大きなケヤキの木の下で、四季を感じながら外遊び。虫探し、泥んこ遊び、水たまりジャンプ。五感をフルに使って遊びます。</p>
+          </div>
+          <div class="feature-card card-blue">
+            <div class="feature-emoji" aria-hidden="true">&#127928;</div>
+            <h3>音楽であそぶ</h3>
+            <p>リトミック、手作り楽器、季節の歌。音楽を通じてリズム感と表現力を育みます。年に一度のミニコンサートはパパママにも大人気。</p>
+          </div>
+          <div class="feature-card card-green">
+            <div class="feature-emoji" aria-hidden="true">&#129382;</div>
+            <h3>食で育つ</h3>
+            <p>給食は園内調理。旬の食材を使い、アレルギーにも個別対応。畑で育てた野菜を収穫して食べる食育プログラムも。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Daily Schedule -->
+    <section class="section section-pastel" id="daily">
+      <div class="container">
+        <h2 class="section-title"><span class="title-emoji">&#9200;</span> 一日の流れ</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-time">7:30</div>
+            <div class="timeline-content">
+              <div class="timeline-icon" aria-hidden="true">&#127774;</div>
+              <h3>登園・自由あそび</h3>
+              <p>おはようございます! 好きなおもちゃで自由にあそびます。</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">9:30</div>
+            <div class="timeline-content">
+              <div class="timeline-icon" aria-hidden="true">&#127793;</div>
+              <h3>朝の会・おやつ</h3>
+              <p>みんなで歌をうたって、おやつの時間。</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">10:00</div>
+            <div class="timeline-content">
+              <div class="timeline-icon" aria-hidden="true">&#127912;</div>
+              <h3>主活動</h3>
+              <p>外あそび、制作、リトミック、お散歩など。年齢に合わせた活動。</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">11:30</div>
+            <div class="timeline-content">
+              <div class="timeline-icon" aria-hidden="true">&#127835;</div>
+              <h3>給食</h3>
+              <p>園内調理のあたたかい給食。みんなで「いただきます!」</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">13:00</div>
+            <div class="timeline-content">
+              <div class="timeline-icon" aria-hidden="true">&#128164;</div>
+              <h3>お昼寝</h3>
+              <p>静かな音楽の中でぐっすりおやすみ。</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">15:00</div>
+            <div class="timeline-content">
+              <div class="timeline-icon" aria-hidden="true">&#127850;</div>
+              <h3>おやつ・自由あそび</h3>
+              <p>手作りおやつを食べて、お迎えまで楽しくあそびます。</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">16:00-</div>
+            <div class="timeline-content">
+              <div class="timeline-icon" aria-hidden="true">&#127750;</div>
+              <h3>降園</h3>
+              <p>今日も楽しかったね。また明日!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events -->
+    <section class="section" id="events">
+      <div class="container">
+        <h2 class="section-title"><span class="title-emoji">&#127880;</span> 年間行事</h2>
+        <div class="events-grid">
+          <div class="event-card">
+            <div class="event-season spring">春</div>
+            <ul>
+              <li>&#127800; 入園式・進級式</li>
+              <li>&#127800; お花見ピクニック</li>
+              <li>&#127800; 親子遠足</li>
+            </ul>
+          </div>
+          <div class="event-card">
+            <div class="event-season summer">夏</div>
+            <ul>
+              <li>&#127774; プール開き</li>
+              <li>&#127774; 七夕まつり</li>
+              <li>&#127774; 夏祭り（盆踊り）</li>
+            </ul>
+          </div>
+          <div class="event-card">
+            <div class="event-season autumn">秋</div>
+            <ul>
+              <li>&#127810; 運動会</li>
+              <li>&#127810; 芋掘り遠足</li>
+              <li>&#127810; ハロウィンパーティ</li>
+            </ul>
+          </div>
+          <div class="event-card">
+            <div class="event-season winter">冬</div>
+            <ul>
+              <li>&#10052;&#65039; クリスマス会</li>
+              <li>&#10052;&#65039; 節分（豆まき）</li>
+              <li>&#10052;&#65039; ミニコンサート・卒園式</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Admission -->
+    <section class="section section-pastel" id="admission">
+      <div class="container">
+        <h2 class="section-title"><span class="title-emoji">&#128218;</span> 入園案内</h2>
+        <div class="admission-grid">
+          <div class="admission-card">
+            <h3>対象年齢</h3>
+            <p>生後57日 〜 就学前（0歳児 〜 5歳児）</p>
+          </div>
+          <div class="admission-card">
+            <h3>定員</h3>
+            <p>60名（0歳: 6名 / 1歳: 10名 / 2歳: 11名 / 3歳: 11名 / 4歳: 11名 / 5歳: 11名）</p>
+          </div>
+          <div class="admission-card">
+            <h3>開園時間</h3>
+            <p>月〜土 7:30 - 19:30<br>（延長保育 18:30 - 19:30）</p>
+          </div>
+          <div class="admission-card">
+            <h3>見学について</h3>
+            <p>随時受付中です。お電話にてお気軽にお問い合わせください。</p>
+          </div>
+        </div>
+        <div class="admission-cta">
+          <a href="https://nurupoga.net" class="btn btn-primary">見学のお申し込み &#10132;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Access -->
+    <section class="section" id="access">
+      <div class="container">
+        <h2 class="section-title"><span class="title-emoji">&#128205;</span> アクセス</h2>
+        <div class="access-grid">
+          <div class="access-map" aria-hidden="true">
+            <div class="map-inner">
+              <svg class="map-tree" width="45" height="75"><use href="#tree"/></svg>
+              <svg class="map-tree map-tree-2" width="35" height="60"><use href="#tree"/></svg>
+              <div class="map-building">&#127979;</div>
+              <p class="map-name">みたか森のこ保育園</p>
+            </div>
+          </div>
+          <div class="access-info">
+            <dl>
+              <div class="access-item">
+                <dt>住所</dt>
+                <dd>〒181-0000 東京都三鷹市森のこ町1-5-3</dd>
+              </div>
+              <div class="access-item">
+                <dt>電話番号</dt>
+                <dd>000-0000-0000</dd>
+              </div>
+              <div class="access-item">
+                <dt>アクセス</dt>
+                <dd>JR中央線「三鷹駅」南口よりバス10分「森のこ公園前」下車 徒歩3分</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-logo">&#127795; みたか森のこ保育園</p>
+        <ul class="footer-nav">
+          <li><a href="https://nurupoga.net">園の特色</a></li>
+          <li><a href="https://nurupoga.net">入園案内</a></li>
+          <li><a href="https://nurupoga.net">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>運営: 株式会社デモホームページ</p>
+        <p>〒100-0000 東京都みどり野市中央1-2-3</p>
+        <p>TEL: 000-0000-0000</p>
+        <p class="footer-note">※このサイトはサンプルであり、実在する企業・団体・サービスではありません。</p>
+        <p class="footer-copy">&copy; 2026 みたか森のこ保育園</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navList = document.querySelector('.nav-list');
+    hamburger.addEventListener('click', () => {
+      const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', !expanded);
+      navList.classList.toggle('open');
+      hamburger.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ヤドリギ設計 - あなたの"秘密基地"、つくります。</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Yomogi&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a href="https://nurupoga.net" class="logo">
+        <svg class="logo-leaf" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 2C8 6 4 12 4 16c0 4 3.5 6 8 6s8-2 8-6c0-4-4-10-8-14z" fill="#2d8a4e" opacity=".7"/>
+          <path d="M12 6v14M9 10l3 4M15 12l-3 4" stroke="#1a5632" stroke-width="1.2" stroke-linecap="round"/>
+        </svg>
+        ヤドリギ設計
+      </a>
+      <nav class="nav" aria-label="メインナビゲーション">
+        <ul class="nav-list">
+          <li><a href="#concept">コンセプト</a></li>
+          <li><a href="#works">施工事例</a></li>
+          <li><a href="#flow">設計の流れ</a></li>
+          <li><a href="#company">会社概要</a></li>
+          <li><a href="#contact" class="nav-cta">お問い合わせ</a></li>
+        </ul>
+        <button class="hamburger" aria-label="メニューを開く" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero with SVG line-drawing animation -->
+    <section class="hero">
+      <div class="hero-svg-wrap">
+        <svg class="hero-svg" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" aria-label="親子キャンプのイラスト">
+          <!-- Ground -->
+          <path class="draw" d="M0 340 Q100 330 200 340 Q350 350 500 335 Q650 325 800 340" stroke="#2d8a4e" stroke-width="2" fill="none"/>
+
+          <!-- Tree 1 (left) -->
+          <line class="draw" x1="120" y1="340" x2="120" y2="240" stroke="#1a5632" stroke-width="2.5"/>
+          <path class="draw" d="M120 240 Q90 200 80 180 Q95 190 120 170 Q145 190 160 180 Q150 200 120 240Z" stroke="#2d8a4e" stroke-width="2" fill="none"/>
+          <!-- Tree branches -->
+          <line class="draw" x1="120" y1="280" x2="95" y2="260" stroke="#1a5632" stroke-width="1.5"/>
+          <line class="draw" x1="120" y1="270" x2="145" y2="250" stroke="#1a5632" stroke-width="1.5"/>
+
+          <!-- Tree 2 (far right) -->
+          <line class="draw" x1="680" y1="335" x2="680" y2="250" stroke="#1a5632" stroke-width="2"/>
+          <path class="draw" d="M680 250 Q655 215 648 200 Q665 210 680 190 Q695 210 712 200 Q705 215 680 250Z" stroke="#2d8a4e" stroke-width="2" fill="none"/>
+
+          <!-- Small tree (right) -->
+          <line class="draw" x1="720" y1="338" x2="720" y2="290" stroke="#1a5632" stroke-width="1.5"/>
+          <path class="draw" d="M720 290 Q707 270 704 262 Q712 268 720 255 Q728 268 736 262 Q733 270 720 290Z" stroke="#2d8a4e" stroke-width="1.5" fill="none"/>
+
+          <!-- Tent -->
+          <path class="draw" d="M350 340 L400 240 L450 340" stroke="#1a5632" stroke-width="2.5" fill="none"/>
+          <line class="draw" x1="400" y1="240" x2="400" y2="230" stroke="#1a5632" stroke-width="1.5"/>
+          <!-- Tent door -->
+          <path class="draw" d="M385 340 Q400 310 415 340" stroke="#1a5632" stroke-width="1.5" fill="none"/>
+          <!-- Tent detail lines -->
+          <line class="draw" x1="400" y1="240" x2="370" y2="310" stroke="#2d8a4e" stroke-width="1" opacity=".5"/>
+          <line class="draw" x1="400" y1="240" x2="430" y2="310" stroke="#2d8a4e" stroke-width="1" opacity=".5"/>
+
+          <!-- Campfire -->
+          <line class="draw" x1="530" y1="340" x2="520" y2="310" stroke="#1a5632" stroke-width="2"/>
+          <line class="draw" x1="560" y1="340" x2="570" y2="310" stroke="#1a5632" stroke-width="2"/>
+          <line class="draw" x1="510" y1="340" x2="545" y2="305" stroke="#1a5632" stroke-width="1.5"/>
+          <!-- Flames -->
+          <path class="draw flame-path" d="M535 310 Q530 290 540 275 Q545 290 542 300 Q548 285 550 270 Q555 288 548 305 Q558 295 555 310" stroke="#2d8a4e" stroke-width="1.5" fill="none"/>
+
+          <!-- Parent silhouette (standing, right of fire) -->
+          <!-- Head -->
+          <circle class="draw" cx="490" cy="280" r="12" stroke="#1a5632" stroke-width="2" fill="none"/>
+          <!-- Body -->
+          <line class="draw" x1="490" y1="292" x2="490" y2="320" stroke="#1a5632" stroke-width="2"/>
+          <!-- Arms -->
+          <path class="draw" d="M490 300 Q475 308 470 315" stroke="#1a5632" stroke-width="1.5" fill="none"/>
+          <path class="draw" d="M490 300 Q505 308 510 315" stroke="#1a5632" stroke-width="1.5" fill="none"/>
+          <!-- Legs -->
+          <line class="draw" x1="490" y1="320" x2="480" y2="340" stroke="#1a5632" stroke-width="2"/>
+          <line class="draw" x1="490" y1="320" x2="500" y2="340" stroke="#1a5632" stroke-width="2"/>
+
+          <!-- Child silhouette (smaller, next to parent) -->
+          <!-- Head -->
+          <circle class="draw" cx="470" cy="305" r="8" stroke="#1a5632" stroke-width="1.5" fill="none"/>
+          <!-- Body -->
+          <line class="draw" x1="470" y1="313" x2="470" y2="328" stroke="#1a5632" stroke-width="1.5"/>
+          <!-- Arms (reaching toward fire) -->
+          <path class="draw" d="M470 318 Q478 322 485 320" stroke="#1a5632" stroke-width="1.2" fill="none"/>
+          <path class="draw" d="M470 318 Q462 322 458 320" stroke="#1a5632" stroke-width="1.2" fill="none"/>
+          <!-- Legs -->
+          <line class="draw" x1="470" y1="328" x2="465" y2="340" stroke="#1a5632" stroke-width="1.5"/>
+          <line class="draw" x1="470" y1="328" x2="475" y2="340" stroke="#1a5632" stroke-width="1.5"/>
+
+          <!-- Stars -->
+          <circle class="draw star-dot" cx="200" cy="100" r="2" stroke="#2d8a4e" stroke-width="1" fill="none"/>
+          <circle class="draw star-dot" cx="350" cy="80" r="1.5" stroke="#2d8a4e" stroke-width="1" fill="none"/>
+          <circle class="draw star-dot" cx="550" cy="90" r="2" stroke="#2d8a4e" stroke-width="1" fill="none"/>
+          <circle class="draw star-dot" cx="650" cy="110" r="1.5" stroke="#2d8a4e" stroke-width="1" fill="none"/>
+          <circle class="draw star-dot" cx="300" cy="120" r="1" stroke="#2d8a4e" stroke-width="1" fill="none"/>
+          <circle class="draw star-dot" cx="480" cy="70" r="1.5" stroke="#2d8a4e" stroke-width="1" fill="none"/>
+
+          <!-- Moon -->
+          <path class="draw" d="M250 60 Q270 50 275 70 Q265 65 250 60Z" stroke="#2d8a4e" stroke-width="1.5" fill="none"/>
+        </svg>
+      </div>
+      <div class="hero-content">
+        <h1 class="hero-title">あなたの<em>"秘密基地"</em>、<br>つくります。</h1>
+        <p class="hero-sub">ヤドリギ設計 ─ 森と暮らす家づくり</p>
+        <a href="https://nurupoga.net" class="btn btn-primary">施工事例を見る</a>
+      </div>
+    </section>
+
+    <!-- Concept -->
+    <section class="section" id="concept">
+      <div class="container">
+        <div class="concept-content">
+          <h2 class="concept-title">家は、冒険の拠点だ。</h2>
+          <div class="concept-text">
+            <p>
+              子どもの頃、秘密基地を作ったことはありますか。<br>
+              木の上の小屋、段ボールの城、押入れの中の宇宙船。<br>
+              あの頃のワクワクを、大人になっても忘れたくない。
+            </p>
+            <p>
+              ヤドリギ設計は、そんな想いから生まれた設計事務所です。<br>
+              自然と対話し、暮らしに寄り添い、<br>
+              家族が帰りたくなる"秘密基地"を設計します。
+            </p>
+            <p>
+              森の中の一軒家、庭のツリーハウス、焚き火ができるテラス。<br>
+              あなたの冒険は、ここから始まります。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Works -->
+    <section class="section section-light" id="works">
+      <div class="container">
+        <h2 class="section-title">施工事例</h2>
+        <div class="works-grid">
+          <div class="work-card">
+            <div class="work-img" aria-hidden="true">
+              <div class="work-placeholder w1"></div>
+            </div>
+            <div class="work-info">
+              <h3>森の中のログハウス</h3>
+              <p>長野県みずほ野市 / 2024年竣工</p>
+              <p class="work-desc">大きな窓から四季折々の森を眺める。家族4人のためのログハウス。</p>
+            </div>
+          </div>
+          <div class="work-card">
+            <div class="work-img" aria-hidden="true">
+              <div class="work-placeholder w2"></div>
+            </div>
+            <div class="work-info">
+              <h3>焚き火テラスの家</h3>
+              <p>長野県みずほ野市 / 2023年竣工</p>
+              <p class="work-desc">リビングからそのまま出られるテラスに焚き火スペースを設計。</p>
+            </div>
+          </div>
+          <div class="work-card">
+            <div class="work-img" aria-hidden="true">
+              <div class="work-placeholder w3"></div>
+            </div>
+            <div class="work-info">
+              <h3>ツリーハウスのある暮らし</h3>
+              <p>山梨県北杜市 / 2023年竣工</p>
+              <p class="work-desc">庭のクヌギの木にツリーハウスを設計。子どもたちの秘密基地。</p>
+            </div>
+          </div>
+          <div class="work-card">
+            <div class="work-img" aria-hidden="true">
+              <div class="work-placeholder w4"></div>
+            </div>
+            <div class="work-info">
+              <h3>崖の上の書斎</h3>
+              <p>静岡県伊東市 / 2022年竣工</p>
+              <p class="work-desc">海を見下ろす崖の上に建つ小さな書斎。作家のためのアトリエ。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Flow -->
+    <section class="section" id="flow">
+      <div class="container">
+        <h2 class="section-title">設計の流れ</h2>
+        <div class="flow-timeline">
+          <div class="flow-item">
+            <div class="flow-number" aria-hidden="true">01</div>
+            <div class="flow-content">
+              <h3>ご相談・ヒアリング</h3>
+              <p>まずはお気軽にご連絡ください。暮らし方、好きなこと、大切にしたいことをお聞きします。オンラインでも対面でも。</p>
+            </div>
+          </div>
+          <div class="flow-item">
+            <div class="flow-number" aria-hidden="true">02</div>
+            <div class="flow-content">
+              <h3>敷地調査・プランニング</h3>
+              <p>敷地の環境、日当たり、風の通り道を調査。あなたの暮らしに合った間取りをご提案します。</p>
+            </div>
+          </div>
+          <div class="flow-item">
+            <div class="flow-number" aria-hidden="true">03</div>
+            <div class="flow-content">
+              <h3>設計・お見積もり</h3>
+              <p>図面と模型でイメージを共有。素材や仕上げを一つひとつ選びながら、理想の形にしていきます。</p>
+            </div>
+          </div>
+          <div class="flow-item">
+            <div class="flow-number" aria-hidden="true">04</div>
+            <div class="flow-content">
+              <h3>着工・施工管理</h3>
+              <p>信頼できる工務店と連携して施工。現場に足を運び、細部まで丁寧に管理します。</p>
+            </div>
+          </div>
+          <div class="flow-item">
+            <div class="flow-number" aria-hidden="true">05</div>
+            <div class="flow-content">
+              <h3>お引き渡し</h3>
+              <p>完成、おめでとうございます。冒険の拠点で、新しい暮らしが始まります。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Company -->
+    <section class="section section-light" id="company">
+      <div class="container">
+        <h2 class="section-title">会社概要</h2>
+        <div class="company-table">
+          <dl>
+            <div class="company-row">
+              <dt>社名</dt>
+              <dd>ヤドリギ設計 一級建築士事務所</dd>
+            </div>
+            <div class="company-row">
+              <dt>代表</dt>
+              <dd>森丘 翠（もりおか みどり）</dd>
+            </div>
+            <div class="company-row">
+              <dt>設立</dt>
+              <dd>2018年4月</dd>
+            </div>
+            <div class="company-row">
+              <dt>所在地</dt>
+              <dd>〒399-0000 長野県みずほ野市森丘台4-2-1</dd>
+            </div>
+            <div class="company-row">
+              <dt>電話番号</dt>
+              <dd>000-0000-0000</dd>
+            </div>
+            <div class="company-row">
+              <dt>事業内容</dt>
+              <dd>住宅・別荘の設計監理 / リノベーション / 家具デザイン</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section-green" id="contact">
+      <div class="container center">
+        <h2 class="contact-title">まずは、お話ししませんか。</h2>
+        <p class="contact-sub">家づくりのこと、土地のこと、なんでもお気軽にご相談ください。<br>オンラインでのご相談も承っています。</p>
+        <div class="contact-btns">
+          <a href="https://nurupoga.net" class="btn btn-white">お問い合わせフォーム</a>
+          <a href="https://nurupoga.net" class="btn btn-outline-white">資料請求</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <p class="footer-logo">ヤドリギ設計</p>
+          <p class="footer-tagline">森と暮らす家づくり</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://nurupoga.net">施工事例</a>
+          <a href="https://nurupoga.net">設計の流れ</a>
+          <a href="https://nurupoga.net">会社概要</a>
+          <a href="https://nurupoga.net">お問い合わせ</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>運営: 株式会社デモホームページ</p>
+        <p>〒100-0000 東京都みどり野市中央1-2-3</p>
+        <p>TEL: 000-0000-0000</p>
+        <p class="footer-note">※このサイトはサンプルであり、実在する企業・団体・サービスではありません。</p>
+        <p class="footer-copy">&copy; 2026 ヤドリギ設計</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger
+    const hamburger = document.querySelector('.hamburger');
+    const navList = document.querySelector('.nav-list');
+    hamburger.addEventListener('click', () => {
+      const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', !expanded);
+      navList.classList.toggle('open');
+      hamburger.classList.toggle('open');
+    });
+
+    // SVG line drawing animation
+    document.addEventListener('DOMContentLoaded', () => {
+      const paths = document.querySelectorAll('.draw');
+      paths.forEach((path, i) => {
+        let length;
+        if (path.tagName === 'circle') {
+          const r = parseFloat(path.getAttribute('r'));
+          length = 2 * Math.PI * r;
+        } else if (path.tagName === 'line') {
+          const x1 = parseFloat(path.getAttribute('x1'));
+          const y1 = parseFloat(path.getAttribute('y1'));
+          const x2 = parseFloat(path.getAttribute('x2'));
+          const y2 = parseFloat(path.getAttribute('y2'));
+          length = Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2);
+        } else {
+          length = path.getTotalLength ? path.getTotalLength() : 200;
+        }
+        path.style.strokeDasharray = length;
+        path.style.strokeDashoffset = length;
+        path.style.animation = `drawLine 1.5s ease forwards ${i * 0.08}s`;
+      });
+    });
+
+    // Fade-in on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.work-card, .flow-item, .concept-content, .company-table').forEach(el => {
+      el.classList.add('fade-in');
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

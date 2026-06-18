@@ -1,0 +1,145 @@
+/* ===== Yadorigi - Architecture Studio ===== */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --green-deep:#1a5632;--green:#2d8a4e;--green-light:#4caf50;
+  --green-pale:#e8f5e9;--green-bg:#f0f7f2;
+  --brown:#5c4033;--brown-light:#8b7355;
+  --cream:#faf8f4;
+  --text:#2a3a2e;--text-light:#5a6a5e;
+  --white:#ffffff;
+  --radius:12px;--radius-lg:20px;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Zen Maru Gothic','Yomogi',sans-serif;color:var(--text);line-height:1.8;background:var(--white)}
+a{color:inherit;text-decoration:none}
+ul,dl{list-style:none}
+.container{max-width:960px;margin:0 auto;padding:0 24px}
+.center{text-align:center}
+
+/* Fade-in */
+.fade-in{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.fade-in.visible{opacity:1;transform:translateY(0)}
+
+/* SVG draw animation */
+@keyframes drawLine{
+  to{stroke-dashoffset:0}
+}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 32px;border-radius:100px;font-size:.95rem;font-weight:700;transition:all .3s;cursor:pointer;border:none;font-family:inherit;letter-spacing:.05em}
+.btn-primary{background:var(--green);color:var(--white);box-shadow:0 4px 16px rgba(45,138,78,.25)}
+.btn-primary:hover{background:var(--green-deep);transform:translateY(-2px)}
+.btn-white{background:var(--white);color:var(--green-deep);padding:14px 32px;border-radius:100px}
+.btn-white:hover{background:var(--green-pale)}
+.btn-outline-white{background:transparent;color:var(--white);border:2px solid var(--white);padding:14px 32px;border-radius:100px}
+.btn-outline-white:hover{background:rgba(255,255,255,.15)}
+
+/* Header */
+.header{position:fixed;top:0;left:0;right:0;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);z-index:100;border-bottom:1px solid rgba(26,86,50,.08)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;max-width:960px;margin:0 auto;padding:0 24px;height:64px}
+.logo{display:flex;align-items:center;gap:6px;font-size:1.1rem;font-weight:700;color:var(--green-deep)}
+.logo-leaf{flex-shrink:0}
+.nav-list{display:flex;gap:24px;font-size:.85rem;font-weight:500}
+.nav-list a{color:var(--text-light);transition:color .2s}
+.nav-list a:hover{color:var(--green)}
+.nav-cta{background:var(--green);color:var(--white) !important;padding:8px 20px;border-radius:100px;transition:background .2s !important}
+.nav-cta:hover{background:var(--green-deep)}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px}
+.hamburger span{display:block;width:22px;height:2px;background:var(--green-deep);transition:transform .3s,opacity .3s}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* Hero */
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--white);padding:80px 24px 40px;position:relative}
+.hero-svg-wrap{width:100%;max-width:800px;margin:0 auto 40px}
+.hero-svg{width:100%;height:auto}
+.hero-content{text-align:center}
+.hero-title{font-size:2.2rem;font-weight:700;line-height:1.6;margin-bottom:16px;color:var(--green-deep)}
+.hero-title em{font-style:normal;color:var(--green);position:relative}
+.hero-title em::after{content:'';position:absolute;bottom:2px;left:0;right:0;height:6px;background:rgba(45,138,78,.15);border-radius:3px;z-index:-1}
+.hero-sub{font-size:1rem;color:var(--text-light);margin-bottom:28px;letter-spacing:.08em}
+
+/* Sections */
+.section{padding:100px 0}
+.section-light{background:var(--green-bg)}
+.section-title{font-size:1.6rem;font-weight:700;text-align:center;margin-bottom:48px;color:var(--green-deep);letter-spacing:.08em}
+
+/* Concept */
+.concept-content{max-width:640px;margin:0 auto;text-align:center}
+.concept-title{font-size:2rem;font-weight:700;color:var(--green-deep);margin-bottom:32px;line-height:1.5}
+.concept-text p{font-size:1rem;color:var(--text-light);line-height:2.2;margin-bottom:20px}
+
+/* Works */
+.works-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.work-card{background:var(--white);border-radius:var(--radius-lg);overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.04);transition:transform .3s,box-shadow .3s}
+.work-card:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,0,0,.08)}
+.work-img{aspect-ratio:16/10;overflow:hidden}
+.work-placeholder{width:100%;height:100%;transition:transform .5s}
+.work-card:hover .work-placeholder{transform:scale(1.03)}
+.w1{background:linear-gradient(135deg,#2d5a3a,#4a8a5e,#1a3a28)}
+.w2{background:linear-gradient(135deg,#5a3a1a,#8a6a3a,#3a2a1a);
+  background-image:linear-gradient(135deg,#5a3a1a,#8a6a3a),
+    radial-gradient(circle at 60% 70%,rgba(255,120,40,.2) 0%,transparent 50%)}
+.w3{background:linear-gradient(135deg,#3a6a3a,#6aaa5a,#2a4a2a)}
+.w4{background:linear-gradient(135deg,#3a5a8a,#6a8aaa,#2a3a5a)}
+.work-info{padding:20px}
+.work-info h3{font-size:1rem;font-weight:700;margin-bottom:4px;color:var(--green-deep)}
+.work-info p{font-size:.8rem;color:var(--text-light)}
+.work-desc{margin-top:8px;line-height:1.7}
+
+/* Flow */
+.flow-timeline{max-width:640px;margin:0 auto}
+.flow-item{display:flex;gap:24px;margin-bottom:32px;align-items:flex-start}
+.flow-number{font-family:'Yomogi',cursive;font-size:2rem;font-weight:700;color:var(--green);opacity:.5;flex-shrink:0;width:48px;text-align:center;line-height:1}
+.flow-content{flex:1;border-left:2px solid var(--green-pale);padding-left:20px}
+.flow-content h3{font-size:1rem;font-weight:700;color:var(--green-deep);margin-bottom:4px}
+.flow-content p{font-size:.9rem;color:var(--text-light);line-height:1.8}
+
+/* Company */
+.company-table{max-width:640px;margin:0 auto}
+.company-row{display:flex;gap:20px;padding:16px 0;border-bottom:1px solid rgba(26,86,50,.08);align-items:baseline}
+.company-row dt{font-weight:700;font-size:.85rem;color:var(--green-deep);min-width:100px;flex-shrink:0}
+.company-row dd{font-size:.9rem;color:var(--text-light);line-height:1.7}
+
+/* Contact */
+.section-green{background:linear-gradient(135deg,var(--green-deep),var(--green));color:var(--white);padding:80px 0}
+.contact-title{font-size:1.8rem;font-weight:700;margin-bottom:12px;letter-spacing:.05em}
+.contact-sub{font-size:.95rem;opacity:.85;margin-bottom:32px;line-height:1.8}
+.contact-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+/* Footer */
+.footer{background:var(--green-deep);color:var(--green-pale);padding:48px 0 24px}
+.footer-inner{display:flex;justify-content:space-between;align-items:start;margin-bottom:24px;flex-wrap:wrap;gap:24px}
+.footer-logo{font-size:1.1rem;font-weight:700;color:var(--white);margin-bottom:4px}
+.footer-tagline{font-size:.8rem;color:rgba(255,255,255,.5)}
+.footer-links{display:flex;flex-wrap:wrap;gap:20px}
+.footer-links a{font-size:.85rem;color:rgba(255,255,255,.5);transition:color .2s}
+.footer-links a:hover{color:var(--white)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;text-align:center;font-size:.75rem;color:rgba(255,255,255,.4);line-height:1.8}
+.footer-note{margin-top:8px;font-size:.7rem}
+.footer-copy{margin-top:8px}
+
+/* Responsive */
+@media(max-width:768px){
+  .hamburger{display:flex}
+  .nav-list{
+    display:none;flex-direction:column;position:absolute;top:64px;left:0;right:0;
+    background:rgba(255,255,255,.98);padding:16px 24px;gap:8px;
+    border-bottom:1px solid rgba(26,86,50,.08)
+  }
+  .nav-list.open{display:flex}
+  .hero{min-height:auto;padding:100px 24px 40px}
+  .hero-title{font-size:1.6rem}
+  .works-grid{grid-template-columns:1fr}
+  .section{padding:64px 0}
+  .flow-item{gap:16px}
+  .company-row{flex-direction:column;gap:4px}
+  .company-row dt{min-width:auto}
+  .footer-inner{flex-direction:column}
+  .footer-links{flex-direction:column;gap:12px}
+}
+@media(max-width:480px){
+  .hero-title{font-size:1.4rem}
+  .concept-title{font-size:1.5rem}
+}
