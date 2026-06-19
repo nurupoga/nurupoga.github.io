@@ -247,6 +247,13 @@ a.work-card--link {
   background: linear-gradient(135deg, #166534 0%, #4ade80 100%);
 }
 
+.work-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
 .work-thumb-label {
   font-size: 2rem;
   font-weight: 800;
