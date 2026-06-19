@@ -227,6 +227,26 @@ a.work-card--link {
   background: linear-gradient(135deg, #d97706 0%, #dc2626 100%);
 }
 
+.work-thumb--saas {
+  background: linear-gradient(135deg, #2563eb 0%, #06b6d4 100%);
+}
+
+.work-thumb--cafe {
+  background: linear-gradient(135deg, #92400e 0%, #d4a574 100%);
+}
+
+.work-thumb--nursery {
+  background: linear-gradient(135deg, #86efac 0%, #fde68a 100%);
+}
+
+.work-thumb--ec {
+  background: linear-gradient(135deg, #1c1917 0%, #ea580c 100%);
+}
+
+.work-thumb--architect {
+  background: linear-gradient(135deg, #166534 0%, #4ade80 100%);
+}
+
 .work-thumb-label {
   font-size: 2rem;
   font-weight: 800;
@@ -315,6 +335,13 @@ a.work-card--link {
 
 .works-category-title:first-of-type {
   margin-top: 0;
+}
+
+.works-category-desc {
+  font-size: 0.8125rem;
+  color: var(--color-text-light);
+  margin-bottom: 1rem;
+  margin-top: -0.5rem;
 }
 
 .work-card--mock {
