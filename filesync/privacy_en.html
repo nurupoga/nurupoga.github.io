@@ -142,12 +142,12 @@
   </nav>
 
   <h1>FileSync Privacy Policy</h1>
-  <p class="meta">Last updated: June 15, 2026 / First published: May 3, 2026</p>
+  <p class="meta">Last updated: October 21, 2026 / First published: May 3, 2026</p>
 
   <div class="notice">
-    <strong>Summary:</strong> FileSync does not use advertising or tracking, and does not send file contents or cloud credentials to the developer's servers.
-    Credentials and metadata for cloud services are generally stored on your device (Apple Keychain / Android KeyStore).
-    To improve quality and investigate failures, crash reports and diagnostic logs may be sent to Sentry. File contents, credentials, passwords, and access tokens are masked and are not intentionally sent.
+    <strong>Summary:</strong> FileSync does not use advertising or tracking. File transfers go directly to your chosen service, and credentials are used to authenticate those connections.
+    Credentials use OS secure storage; metadata, settings, and history are also stored in app-private storage.
+    To improve quality and investigate failures, crash reports and diagnostic logs may be sent to Sentry. File contents, credentials, passwords, and access tokens are masked and are not intentionally sent. Masking does not guarantee complete anonymization of all diagnostic content.
   </div>
 
   <h2>1. Introduction</h2>
@@ -158,8 +158,8 @@
   </p>
 
   <h2>2. Information Handled</h2>
-  <h3>2.1 Information the App does NOT collect</h3>
-  <p>The App does not collect any of the following on any server:</p>
+  <h3>2.1 Information not collected for advertising or tracking</h3>
+  <p>The following are not collected for advertising or tracking. Diagnostic transmissions for quality improvement are described below:</p>
   <ul>
     <li>Personally identifiable information (name, address, phone number, email address, etc.)</li>
     <li>The contents of files you operate on</li>
@@ -171,13 +171,13 @@
 
   <h3>2.2 Crash Reports and Diagnostic Logs</h3>
   <p>
-    The App may use Sentry to send crash reports and diagnostic logs for quality improvement, bug investigation, and crash analysis.
-    These reports may include error details, device / OS / app version, timestamps, stack traces, and technical state related to screens or features.
-    File contents, cloud service credentials, passwords, access tokens, and SSH keys are masked by the App and are not intentionally sent.
+    When diagnostic reporting is configured in the app build, the App automatically sends crash reports, diagnostic logs, and performance information to Sentry for quality improvement, bug investigation, and crash analysis.
+    These reports may include error details, device / OS / app version, timestamps, stack traces, and technical state or timing related to screens or features.
+    File contents, cloud service credentials, passwords, access tokens, and SSH keys are masked by the App and are not intentionally sent. Masking does not guarantee complete anonymization of all diagnostic content.
   </p>
 
-  <h3>2.3 Information stored only on your device</h3>
-  <p>The following information is stored only on your device. It is never transmitted to the developer's servers.</p>
+  <h3>2.3 Information stored on your device</h3>
+  <p>The following information is stored on your device. Necessary credentials are sent to your chosen service when connecting. Diagnostic information may also be transmitted as described above.</p>
   <ul>
     <li><strong>OAuth access tokens / refresh tokens</strong> for each cloud service</li>
     <li><strong>Connection details and credentials</strong> (username, password, SSH key) for WebDAV / SFTP / FTP</li>
@@ -186,7 +186,7 @@
     <li>History of backup and transfer jobs</li>
   </ul>
   <p>
-    On iOS this information is stored in the <strong>Apple Keychain</strong> and the app's encrypted private storage; on Android, it is stored in the <strong>Android KeyStore</strong> and encrypted internal storage. The OS isolates this data per app.
+    Credentials use iOS Keychain or Android secure storage. Metadata, settings, and history are also stored in databases and other app-private storage isolated by the OS; the App does not separately encrypt all such data.
   </p>
 
   <h3>2.4 Information transmitted externally by user action</h3>
@@ -197,7 +197,7 @@
 
   <h2>3. Third-Party Services</h2>
   <p>
-    The App communicates <strong>under your account</strong> with the services you choose to connect. The developer only acts as a client; credentials are never sent to the developer's servers.
+    The App communicates <strong>under your account</strong> with the services you choose to connect. The developer only acts as a client; credentials are used to authenticate your chosen connections. Diagnostic masking is described above.
   </p>
   <ul>
     <li>Google Drive (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google LLC Privacy Policy</a>)</li>
@@ -205,16 +205,16 @@
     <li>pCloud (<a href="https://www.pcloud.com/help/privacy-policy" target="_blank" rel="noopener">pCloud Privacy Policy</a>)</li>
     <li>WebDAV / SFTP / FTP servers (any server you specify)</li>
   </ul>
-  <p>Data handling at these services is governed by each provider's privacy policy.</p>
+  <p>Data handling at these services is governed by each provider's privacy policy. Diagnostic reporting also uses <a href="https://sentry.io/privacy/">Sentry</a>.</p>
 
   <h2>4. OS Permissions</h2>
-  <p>The App requests the following OS permissions only when you use the corresponding feature:</p>
+  <p>The following permissions support these features. Request timing depends on the OS, app initialization, and feature settings:</p>
   <ul>
     <li><strong>Photo library</strong>: for automatic photo/video backup</li>
     <li><strong>Local network</strong>: for WebDAV / SFTP / FTP server connections</li>
     <li><strong>Face ID / Touch ID / biometrics</strong>: for the app lock</li>
     <li><strong>File sharing / document browser</strong>: for file import/export</li>
-    <li><strong>Background processing</strong>: to continue transfers while the app is closed</li>
+    <li><strong>Background processing</strong>: to perform background transfers when permitted by the OS; continuous transfer after the app is closed is not guaranteed</li>
     <li><strong>External storage (Android)</strong>: to access USB / SD card content</li>
   </ul>
 
@@ -229,8 +229,8 @@
 
   <h2>6. Security</h2>
   <ul>
-    <li>Credentials and tokens are stored in iOS Keychain / Android KeyStore, protected by the OS secure enclave</li>
-    <li>All network communications use encrypted protocols such as HTTPS / SSH / TLS</li>
+    <li>Credentials and tokens use OS secure storage</li>
+    <li>Encryption depends on the connection type and settings. HTTPS and SFTP are encrypted; plain FTP and HTTP connections are not. Choose an encrypted connection for sensitive information</li>
     <li>The app supports a biometric app lock (Face ID / Touch ID / fingerprint)</li>
     <li>SFTP supports public-key authentication</li>
   </ul>
@@ -238,27 +238,26 @@
   <h2>7. Children's Privacy</h2>
   <p>
     The App does not knowingly collect personal information from children under 13.
-    Because the App does not collect any personal information at all, no information is recorded on the developer's side regardless of the user's age.
   </p>
 
   <h2>8. International Data Transfers</h2>
   <p>
-    The App itself does not transmit data to the developer's servers.
-    However, the cloud services you choose (e.g. Google Drive) may store data outside your country. See each service's privacy policy for details.
+    File contents do not pass through the developer's servers. Sentry and your chosen services
+    may store data outside your country. See each service's privacy policy for details.
   </p>
 
   <h2>9. GDPR / CCPA</h2>
   <p>
-    Because the App does not collect or store personal data on the developer's servers, the developer is generally not a "data controller" under GDPR or a "business" under CCPA.
-    You can delete locally stored credentials by uninstalling the app or by using the disconnect option in the app's settings.
+    For questions about data handling or deletion, please use the contact information below.
+    Deletion of device credentials and uploaded files is described in the next section.
   </p>
 
   <h2>10. Data Deletion</h2>
   <h3>10.1 Credentials and connection settings</h3>
   <ul>
     <li>Logging out / disconnecting in each service's screen removes the corresponding tokens from the device</li>
-    <li>Uninstalling the app removes all app data except Keychain / KeyStore items</li>
-    <li>Keychain / KeyStore items can also be removed from the OS settings</li>
+    <li>Credentials may remain in iOS Keychain after uninstalling. Disconnect your services before uninstalling</li>
+    <li>You can also revoke app access in the service's authorization settings. Deleting device data does not delete diagnostic information already sent</li>
   </ul>
   <h3>10.2 Files already uploaded</h3>
   <p>Delete them directly from each cloud / server's management UI or official app. The App also supports delete operations.</p>
@@ -278,16 +277,17 @@
   <h2>13. Summary</h2>
   <p>FileSync is built on the principles of "local-first" and "privacy by design":</p>
   <ul>
-    <li>No credentials are sent to the developer's servers</li>
+    <li>Credentials authenticate your chosen connections; diagnostic reports use the masking described above</li>
     <li>File contents do not pass through the developer's servers</li>
-    <li>Credentials are encrypted in Keychain / KeyStore on the device</li>
-    <li>No data is sold or provided to third parties</li>
+    <li>Credentials are protected in secure storage on the device</li>
+    <li>Data is not sold. Transmissions to your chosen services and diagnostic reporting to Sentry are described above</li>
     <li>No ads or tracking</li>
   </ul>
 
   <div class="changelog">
     <strong>Changelog</strong>
     <ul>
+      <li>2026-10-21: Aligned diagnostic/performance reporting, local storage, and connection encryption descriptions</li>
       <li>2026-06-15: Added explanation of crash reports and diagnostic logs through Sentry</li>
       <li>2026-05-03: First published</li>
     </ul>
