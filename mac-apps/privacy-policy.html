@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — temper Mac Apps</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #1d1d1f;
+            --muted: #6e6e73;
+            --border: #d2d2d7;
+            --accent: #0071e3;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #1d1d1f;
+                --text: #f5f5f7;
+                --muted: #a1a1a6;
+                --border: #424245;
+                --accent: #2997ff;
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 2.5rem;
+            margin-bottom: 0.75rem;
+            color: var(--accent);
+        }
+        h3 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        p, li {
+            margin-bottom: 0.75rem;
+        }
+        ul {
+            padding-left: 1.5rem;
+        }
+        .updated {
+            color: var(--muted);
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+        .lang-toggle {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .lang-toggle button {
+            padding: 0.5rem 1.25rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            background: transparent;
+            color: var(--text);
+            cursor: pointer;
+            font-size: 0.95rem;
+        }
+        .lang-toggle button.active {
+            background: var(--accent);
+            color: #fff;
+            border-color: var(--accent);
+        }
+        .lang-section { display: none; }
+        .lang-section.active { display: block; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2rem 0;
+        }
+        strong { font-weight: 600; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="updated">Last Updated: 2026-10-26</p>
+
+        <div class="lang-toggle">
+            <button class="active" onclick="switchLang('en', this)">English</button>
+            <button onclick="switchLang('ja', this)">日本語</button>
+        </div>
+
+        <!-- English -->
+        <div id="lang-en" class="lang-section active">
+            <h2>1. Introduction</h2>
+            <p>This Privacy Policy applies to the following macOS applications (collectively, "the Apps") developed by temper ("the Developer"):</p>
+            <ul>
+                <li><strong>ClipStash</strong> — Clipboard history manager</li>
+                <li><strong>PixelDress</strong> — Screenshot editing tool</li>
+                <li><strong>PDFSlim</strong> — PDF compression tool</li>
+                <li><strong>FocusVeil</strong> — Focus timer</li>
+                <li><strong>MacVital</strong> — Battery/SSD/Privacy/Startup manager</li>
+            </ul>
+            <p>This policy applies equally to all of the above applications.</p>
+
+            <h2>2. Data Collection</h2>
+            <p><strong>The Developer does not collect personal data through the Apps.</strong></p>
+            <ul>
+                <li>The Developer does not receive app usage data, clipboard contents, documents, images, or system statistics through the Apps</li>
+                <li>No user behavior tracking is performed</li>
+                <li>No advertising or analytics SDKs are included</li>
+            </ul>
+
+            <h2>3. Data Storage</h2>
+            <p>The Apps process their data locally. Optional connections to AI tools are described in section 6.</p>
+            <p>App-specific data storage details:</p>
+            <ul>
+                <li><strong>ClipStash</strong>: Clipboard history is stored in a local SQLite database. By default, recognized concealed clipboard types are excluded; unmarked content may still be saved.</li>
+                <li><strong>PixelDress</strong>: All image processing is performed entirely on the device. Optional AI connections are covered in section 6.</li>
+                <li><strong>PDFSlim</strong>: All PDF compression and conversion is performed entirely on the device. Confidential documents can be processed safely.</li>
+                <li><strong>FocusVeil</strong>: Timer records are stored locally. No usage statistics are sent externally.</li>
+                <li><strong>MacVital</strong>: System information (battery status, SSD health, etc.) is used for local monitoring. Optional AI connections are covered in section 6.</li>
+            </ul>
+            <p>Use the data deletion controls in the Apps to remove saved records. macOS may retain app data after the application is removed; contact support for help locating remaining app data.</p>
+
+            <h2>4. Third-Party Sharing</h2>
+            <p>The Developer does not sell app data or share it for advertising. If you configure an AI connection, the selected tool receives the data returned by that connection.</p>
+
+            <h2>5. Analytics and Advertising</h2>
+            <p>The Apps contain no analytics tools or advertising mechanisms of any kind.</p>
+
+            <h2>6. MCP Integration Privacy</h2>
+            <p>The Apps support the Model Context Protocol (MCP) for integration with AI assistants. MCP communication has the following characteristics:</p>
+            <ul>
+                <li>The Apps communicate locally with the AI tool you configure, using standard input and output (stdio)</li>
+                <li>The Apps do not operate a remote MCP service</li>
+                <li>An AI tool may send received clipboard contents, files, or statistics to its own service. Its privacy policy and settings apply; disable the connection to stop further access</li>
+            </ul>
+
+            <h2>7. Children's Privacy</h2>
+            <p>The Developer does not knowingly collect children’s personal information through the Apps. Current age ratings are shown on each App Store listing.</p>
+
+            <h2>8. Changes to This Policy</h2>
+            <p>This policy may be revised as necessary. Users will be notified of significant changes through app updates.</p>
+
+            <h2>9. Contact</h2><p>If you use the support website’s contact form, your submitted name, email address, and message are processed by FormSubmit and forwarded to the Developer to respond to your request. This is separate from app operation.</p>
+            <p>For questions regarding this policy, please contact us at:</p>
+            <ul>
+                <li><a href="https://nurupoga.net/#contact">Support / お問い合わせ</a></li>
+            </ul>
+        </div>
+
+        <!-- Japanese -->
+        <div id="lang-ja" class="lang-section">
+            <h2>1. はじめに</h2>
+            <p>temper（以下「開発者」）が提供する以下のmacOSアプリケーション（以下「本アプリ」）に関するプライバシーポリシーを定めます。</p>
+            <ul>
+                <li><strong>ClipStash</strong> — クリップボード履歴マネージャー</li>
+                <li><strong>PixelDress</strong> — スクリーンショット加工ツール</li>
+                <li><strong>PDFSlim</strong> — PDF圧縮ツール</li>
+                <li><strong>FocusVeil</strong> — フォーカスタイマー</li>
+                <li><strong>MacVital</strong> — バッテリー/SSD/プライバシー/スタートアップ管理</li>
+            </ul>
+            <p>本ポリシーは上記すべてのアプリに共通して適用されます。</p>
+
+            <h2>2. データ収集について</h2>
+            <p><strong>開発者は、本アプリを通じてユーザーの個人データを収集しません。</strong></p>
+            <ul>
+                <li>開発者は、本アプリを通じて利用状況、クリップボード内容、文書、画像、システム統計を受信しません</li>
+                <li>ユーザー行動のトラッキングは行いません</li>
+                <li>広告SDK、アナリティクスSDK等の第三者SDKは一切組み込んでいません</li>
+            </ul>
+
+            <h2>3. データの保存</h2>
+            <p>本アプリはデータをローカルで処理します。任意で設定するAIツールとの連携については第6節をご確認ください。</p>
+            <p>各アプリ固有のデータ保存について:</p>
+            <ul>
+                <li><strong>ClipStash</strong>: クリップボード履歴をローカルのSQLiteデータベースに保存します。初期設定では認識できる秘匿属性の付いたデータを保存しません。属性が付いていない内容は保存される場合があります。</li>
+                <li><strong>PixelDress</strong>: 画像処理はすべてデバイス上で実行されます。任意のAI連携については第6節をご確認ください。</li>
+                <li><strong>PDFSlim</strong>: PDF圧縮・変換処理はすべてデバイス上で実行されます。機密文書も安全に処理できます。</li>
+                <li><strong>FocusVeil</strong>: タイマー記録はローカルに保存されます。使用統計の外部送信は行いません。</li>
+                <li><strong>MacVital</strong>: システム情報（バッテリー状態、SSD健康度等）はローカルの監視に使用します。任意のAI連携については第6節をご確認ください。</li>
+            </ul>
+            <p>保存記録は各アプリのデータ削除機能で削除できます。アプリを削除してもmacOSにアプリデータが残る場合があります。保存場所が不明な場合はサポートへお問い合わせください。</p>
+
+            <h2>4. 第三者との共有</h2>
+            <p>開発者はアプリデータを販売したり、広告のために共有したりしません。AI連携を設定した場合、その連携が返すデータは選択したAIツールへ渡されます。</p>
+
+            <h2>5. アナリティクス・広告</h2>
+            <p>本アプリには、アナリティクスツールおよび広告配信の仕組みは一切含まれていません。</p>
+
+            <h2>6. MCP連携のプライバシー</h2>
+            <p>本アプリはModel Context Protocol（MCP）に対応しており、AIアシスタントとの連携機能を提供します。MCP通信は以下の特性を持ちます:</p>
+            <ul>
+                <li>設定したAIツールとの通信は、デバイス上の標準入出力（stdio）で行われます</li>
+                <li>本アプリは外部向けのMCPサービスを提供しません</li>
+                <li>AIツールは受け取ったクリップボード内容、ファイル、統計を自らのサービスへ送信する場合があります。各ツールの設定とプライバシーポリシーが適用されます。以後のアクセスを止めるには連携を無効にしてください</li>
+            </ul>
+
+            <h2>7. 子供のプライバシー</h2>
+            <p>開発者は、本アプリを通じて子供の個人情報を意図的に収集しません。最新の年齢レーティングは各App Store掲載ページをご確認ください。</p>
+
+            <h2>8. ポリシーの変更</h2>
+            <p>本ポリシーは、必要に応じて改定される場合があります。重要な変更がある場合は、アプリのアップデートを通じてお知らせします。</p>
+
+            <h2>9. お問い合わせ</h2><p>サポートサイトの問い合わせフォームを利用する場合、入力した氏名、メールアドレス、問い合わせ内容はFormSubmitを通じて開発者へ送られ、回答に使用されます。アプリの動作とは別の処理です。</p>
+            <p>本ポリシーに関するご質問は、以下までお問い合わせください。</p>
+            <ul>
+                <li><a href="https://nurupoga.net/#contact">Support / お問い合わせ</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function switchLang(lang, button) {
+            document.querySelectorAll('.lang-section').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.lang-toggle button').forEach(el => el.classList.remove('active'));
+            document.getElementById('lang-' + lang).classList.add('active');
+            button.classList.add('active');
+        }
+    </script>
+</body>
+</html>
