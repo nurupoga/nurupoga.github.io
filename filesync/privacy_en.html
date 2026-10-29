@@ -142,12 +142,12 @@
   </nav>
 
   <h1>FileSync Privacy Policy</h1>
-  <p class="meta">Last updated: October 21, 2026 / First published: May 3, 2026</p>
+  <p class="meta">Last updated: October 29, 2026 / First published: May 3, 2026</p>
 
   <div class="notice">
     <strong>Summary:</strong> FileSync does not use advertising or tracking. File transfers go directly to your chosen service, and credentials are used to authenticate those connections.
     Credentials use OS secure storage; metadata, settings, and history are also stored in app-private storage.
-    To improve quality and investigate failures, crash reports and diagnostic logs may be sent to Sentry. File contents, credentials, passwords, and access tokens are masked and are not intentionally sent. Masking does not guarantee complete anonymization of all diagnostic content.
+    Automatic external diagnostic reporting is disabled in Android 1.0.3 (29885088 / DeployGate #166) and subsequent builds containing the same change. Section 2.2 distinguishes older versions, local logs, and manual sharing.
   </div>
 
   <h2>1. Introduction</h2>
@@ -159,7 +159,7 @@
 
   <h2>2. Information Handled</h2>
   <h3>2.1 Information not collected for advertising or tracking</h3>
-  <p>The following are not collected for advertising or tracking. Diagnostic transmissions for quality improvement are described below:</p>
+  <p>The following are not collected for advertising or tracking. Version-specific diagnostic handling is described below:</p>
   <ul>
     <li>Personally identifiable information (name, address, phone number, email address, etc.)</li>
     <li>The contents of files you operate on</li>
@@ -171,19 +171,26 @@
 
   <h3>2.2 Crash Reports and Diagnostic Logs</h3>
   <p>
-    When diagnostic reporting is configured in the app build, the App automatically sends crash reports, diagnostic logs, and performance information to Sentry for quality improvement, bug investigation, and crash analysis.
-    These reports may include error details, device / OS / app version, timestamps, stack traces, and technical state or timing related to screens or features.
-    File contents, cloud service credentials, passwords, access tokens, and SSH keys are masked by the App and are not intentionally sent. Masking does not guarantee complete anonymization of all diagnostic content.
+    Android 1.0.3 (build 29885088 / DeployGate #166) and subsequent builds containing the same reporting-disable change do not automatically send crash reports, diagnostic logs, usage statistics, or performance information externally.
+    On iOS, this applies to distributed builds containing that change; it does not automatically change older distributed builds.
+  </p>
+  <p>
+    Older versions, such as DeployGate #165, may automatically report error details, device / OS / app versions, timestamps, and stack traces to Sentry.
+    Masking in older versions does not guarantee anonymization of every file name or path. Updating the App or deleting local data does not delete diagnostic information already sent.
+  </p>
+  <p>
+    Diagnostic logs are also stored on the device. Exporting logs and automatically transmitting them are separate operations. If you manually share a log, review its contents and recipient first.
+    Diagnostics and access logs collected independently by the OS or your chosen services follow their respective settings and policies.
   </p>
 
   <h3>2.3 Information stored on your device</h3>
-  <p>The following information is stored on your device. Necessary credentials are sent to your chosen service when connecting. Diagnostic information may also be transmitted as described above.</p>
+  <p>The following information is stored on your device. Necessary credentials are sent to your chosen service when connecting. Local diagnostic logs and reporting by older versions are described above.</p>
   <ul>
     <li><strong>OAuth access tokens / refresh tokens</strong> for each cloud service</li>
     <li><strong>Connection details and credentials</strong> (username, password, SSH key) for WebDAV / SFTP / FTP</li>
     <li>Temporary cache of file listings (metadata)</li>
     <li>Sync settings, view preferences, and favorites</li>
-    <li>History of backup and transfer jobs</li>
+    <li>History of backup and transfer jobs, and local diagnostic logs</li>
   </ul>
   <p>
     Credentials use iOS Keychain or Android secure storage. Metadata, settings, and history are also stored in databases and other app-private storage isolated by the OS; the App does not separately encrypt all such data.
@@ -197,7 +204,7 @@
 
   <h2>3. Third-Party Services</h2>
   <p>
-    The App communicates <strong>under your account</strong> with the services you choose to connect. The developer only acts as a client; credentials are used to authenticate your chosen connections. Diagnostic masking is described above.
+    The App communicates <strong>under your account</strong> with the services you choose to connect. The developer only acts as a client; credentials are used to authenticate your chosen connections. Reporting by older versions is described above.
   </p>
   <ul>
     <li>Google Drive (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google LLC Privacy Policy</a>)</li>
@@ -205,7 +212,7 @@
     <li>pCloud (<a href="https://www.pcloud.com/help/privacy-policy" target="_blank" rel="noopener">pCloud Privacy Policy</a>)</li>
     <li>WebDAV / SFTP / FTP servers (any server you specify)</li>
   </ul>
-  <p>Data handling at these services is governed by each provider's privacy policy. Diagnostic reporting also uses <a href="https://sentry.io/privacy/">Sentry</a>.</p>
+  <p>Data handling at these services is governed by each provider's privacy policy. Older versions may use <a href="https://sentry.io/privacy/">Sentry</a> for diagnostic reporting. See section 2.2 for the applicable builds and reporting-disable scope.</p>
 
   <h2>4. OS Permissions</h2>
   <p>The following permissions support these features. Request timing depends on the OS, app initialization, and feature settings:</p>
@@ -242,8 +249,7 @@
 
   <h2>8. International Data Transfers</h2>
   <p>
-    File contents do not pass through the developer's servers. Sentry and your chosen services
-    may store data outside your country. See each service's privacy policy for details.
+    File contents do not pass through the developer's servers. Your chosen services may store data outside your country. Diagnostics already sent to Sentry by older versions may also be stored abroad. See each service's privacy policy for details.
   </p>
 
   <h2>9. GDPR / CCPA</h2>
@@ -277,16 +283,18 @@
   <h2>13. Summary</h2>
   <p>FileSync is built on the principles of "local-first" and "privacy by design":</p>
   <ul>
-    <li>Credentials authenticate your chosen connections; diagnostic reports use the masking described above</li>
+    <li>Credentials authenticate your chosen connections; section 2.2 identifies builds with automatic diagnostic reporting disabled</li>
     <li>File contents do not pass through the developer's servers</li>
     <li>Credentials are protected in secure storage on the device</li>
-    <li>Data is not sold. Transmissions to your chosen services and diagnostic reporting to Sentry are described above</li>
+    <li>Data is not sold. Transmissions to your chosen services, local logs, and diagnostic reporting by older versions are described above</li>
     <li>No ads or tracking</li>
   </ul>
 
   <div class="changelog">
     <strong>Changelog</strong>
     <ul>
+      <li>2026-10-29: Published the updated diagnostic reporting policy</li>
+      <li>2026-10-27: Identified builds with automatic diagnostic reporting disabled and clarified older versions, local logs, and manual sharing</li>
       <li>2026-10-21: Aligned diagnostic/performance reporting, local storage, and connection encryption descriptions</li>
       <li>2026-06-15: Added explanation of crash reports and diagnostic logs through Sentry</li>
       <li>2026-05-03: First published</li>
