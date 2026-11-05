@@ -147,7 +147,7 @@
   <div class="notice">
     <strong>Summary:</strong> FileSync does not use advertising or tracking. File transfers go directly to your chosen service, and credentials are used to authenticate those connections.
     Credentials use OS secure storage; metadata, settings, and history are also stored in app-private storage.
-    Automatic external diagnostic reporting is disabled in Android 1.0.3 (29885088 / DeployGate #166) and subsequent builds containing the same change. Section 2.2 distinguishes older versions, local logs, and manual sharing.
+    In this version (version 1.0.3 and later), automatic external diagnostic reporting is disabled. Section 2.2 describes local logs and manual sharing.
   </div>
 
   <h2>1. Introduction</h2>
@@ -171,12 +171,11 @@
 
   <h3>2.2 Crash Reports and Diagnostic Logs</h3>
   <p>
-    Android 1.0.3 (build 29885088 / DeployGate #166) and subsequent builds containing the same reporting-disable change do not automatically send crash reports, diagnostic logs, usage statistics, or performance information externally.
-    On iOS, this applies to distributed builds containing that change; it does not automatically change older distributed builds.
+    In this version (version 1.0.3 and later), the App does not automatically send crash reports, diagnostic logs, usage statistics, or performance information externally.
   </p>
   <p>
-    Older versions, such as DeployGate #165, may automatically report error details, device / OS / app versions, timestamps, and stack traces to Sentry.
-    Masking in older versions does not guarantee anonymization of every file name or path. Updating the App or deleting local data does not delete diagnostic information already sent.
+    Past versions (such as development test builds) may have included functionality that automatically reported error information, device / OS / app versions, timestamps, and stack traces to an external diagnostic service (Sentry) to improve quality.
+    Masking in older versions does not guarantee complete anonymization of every file name or path. Updating the App or deleting local data does not retroactively delete diagnostic information previously sent to servers.
   </p>
   <p>
     Diagnostic logs are also stored on the device. Exporting logs and automatically transmitting them are separate operations. If you manually share a log, review its contents and recipient first.
