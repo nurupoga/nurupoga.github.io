@@ -142,7 +142,7 @@
   </nav>
 
   <h1>FileSync Privacy Policy</h1>
-  <p class="meta">Last updated: November 9, 2026 / First published: May 3, 2026</p>
+  <p class="meta">Last updated: November 11, 2026 / First published: May 3, 2026</p>
 
   <div class="notice">
     <strong>Summary:</strong> FileSync does not use advertising or tracking. File transfers go directly to your chosen service, and credentials are used to authenticate those connections.
@@ -205,6 +205,9 @@
   <p>FileSync's use and transfer of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
   <p>FileSync accesses Google Drive data to provide the browsing, preview, backup and transfer features you choose. Transfers you initiate or configure can send selected data to your chosen storage destinations. Google-derived data is not sold or used for advertising or training general-purpose AI or machine-learning models.</p>
 
+  <p>For Google Drive connections, the App handles your Google account email and account identifiers to select and verify the intended account; file and folder names, IDs, sizes, types, modification times and revision metadata to browse and manage files; and file contents when you request previews, downloads or transfers. These data support the features you select, including operations on existing Drive files, rather than advertising or profiling.</p>
+  <p>Google-derived files may be sent to another cloud service or server only as part of a transfer or sync you initiate or configure. The destination provider receives those selected files under its own privacy policy. Google API connections use HTTPS; protection of a selected destination depends on its protocol, as described in section 6.</p>
+
   <h2>3. Third-Party Services</h2>
   <p>
     The App communicates <strong>under your account</strong> with the services you choose to connect. The developer only acts as a client; credentials are used to authenticate your chosen connections. Reporting by older versions is described above.
@@ -264,12 +267,16 @@
   <h2>10. Data Deletion</h2>
   <h3>10.1 Credentials and connection settings</h3>
   <ul>
-    <li>Logging out / disconnecting in each service's screen removes the corresponding tokens from the device</li>
-    <li>Credentials may remain in iOS Keychain after uninstalling. Disconnect your services before uninstalling</li>
+    <li>Deleting a saved connection removes its saved connection record and connection-specific credentials. Closing a connection or leaving a screen is not the same as deleting it.</li>
+    <li>For Google, removing a connection does not necessarily sign out the Google SDK or remove its retained authorization. Credentials may remain in iOS Keychain after uninstalling. Revoke FileSync access in your Google Account third-party connections settings to withdraw Google authorization.</li>
     <li>You can also revoke app access in the service's authorization settings. Deleting device data does not delete diagnostic information already sent</li>
   </ul>
   <h3>10.2 Files already uploaded</h3>
   <p>Delete them directly from each cloud / server's management UI or official app. The App also supports delete operations.</p>
+
+  <h3>10.3 On-device retention</h3>
+  <p>Saved account identifiers, connection settings, file metadata and transfer history are retained on the device to restore connections, show history and resume configured work. There is no single automatic expiry period for all these records. Use the App's applicable connection, history and cache deletion controls; clearing ordinary cache does not revoke authorization or necessarily delete every history or sync record. App-private data can also be removed by clearing app data or uninstalling, subject to OS behavior and the Keychain exception above.</p>
+  <p>Previews and transfers can create temporary local copies. The App attempts to remove owned preview files when the preview closes, but interruption or cleanup failure can leave temporary files until later removal by the App or OS. Files you explicitly download or export, and copies already transferred to other services, remain until you delete them in the selected location. Removing a FileSync connection does not delete those copies.</p>
 
   <h2>11. Changes to This Policy</h2>
   <p>
@@ -296,6 +303,7 @@
   <div class="changelog">
     <strong>Changelog</strong>
     <ul>
+      <li>2026-11-11: Clarified Google data categories, local retention and connection deletion versus Google authorization</li>
       <li>2026-11-09: Clarified Google API data use and the Limited Use commitment</li>
       <li>2026-10-29: Published the updated diagnostic reporting policy</li>
       <li>2026-10-27: Identified builds with automatic diagnostic reporting disabled and clarified older versions, local logs, and manual sharing</li>
