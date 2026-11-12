@@ -142,12 +142,12 @@
   </nav>
 
   <h1>FileSync Privacy Policy</h1>
-  <p class="meta">Last updated: November 11, 2026 / First published: May 3, 2026</p>
+  <p class="meta">Last updated: November 12, 2026</p>
 
   <div class="notice">
     <strong>Summary:</strong> FileSync does not use advertising or tracking. File transfers go directly to your chosen service, and credentials are used to authenticate those connections.
     Credentials use OS secure storage; metadata, settings, and history are also stored in app-private storage.
-    In this version (version 1.0.3 and later), automatic external diagnostic reporting is disabled. Section 2.2 describes local logs and manual sharing.<br><br><strong>Governing Language:</strong> This Privacy Policy has been prepared in Japanese as the original and governing version. The English translation is provided solely for convenience and reference. In the event of any discrepancy, ambiguity, or conflict between the Japanese original and this English translation, the Japanese version shall prevail in all respects.
+    The App does not automatically send diagnostic information externally. Section 2.2 describes local logs and manual sharing.<br><br><strong>Governing Language:</strong> This Privacy Policy has been prepared in Japanese as the original and governing version. The English translation is provided solely for convenience and reference. In the event of any discrepancy, ambiguity, or conflict between the Japanese original and this English translation, the Japanese version shall prevail in all respects.
   </div>
 
   <h2>1. Introduction</h2>
@@ -159,7 +159,7 @@
 
   <h2>2. Information Handled</h2>
   <h3>2.1 Information not collected for advertising or tracking</h3>
-  <p>The following are not collected for advertising or tracking. Version-specific diagnostic handling is described below:</p>
+  <p>The following are not collected for advertising or tracking:</p>
   <ul>
     <li>Personally identifiable information (name, address, phone number, email address, etc.)</li>
     <li>The contents of files you operate on</li>
@@ -171,11 +171,7 @@
 
   <h3>2.2 Crash Reports and Diagnostic Logs</h3>
   <p>
-    In this version (version 1.0.3 and later), the App does not automatically send crash reports, diagnostic logs, usage statistics, or performance information externally.
-  </p>
-  <p>
-    Past versions (such as development test builds) may have included functionality that automatically reported error information, device / OS / app versions, timestamps, and stack traces to an external diagnostic service (Sentry) to improve quality.
-    Masking in older versions does not guarantee complete anonymization of every file name or path. Updating the App or deleting local data does not retroactively delete diagnostic information previously sent to servers.
+    The App does not automatically send crash reports, diagnostic logs, usage statistics, or performance information externally.
   </p>
   <p>
     Diagnostic logs are also stored on the device. Exporting logs and automatically transmitting them are separate operations. If you manually share a log, review its contents and recipient first.
@@ -183,7 +179,7 @@
   </p>
 
   <h3>2.3 Information stored on your device</h3>
-  <p>The following information is stored on your device. Necessary credentials are sent to your chosen service when connecting. Local diagnostic logs and reporting by older versions are described above.</p>
+  <p>The following information is stored on your device. Necessary credentials are sent to your chosen service when connecting. Local diagnostic logs are described above.</p>
   <ul>
     <li><strong>OAuth access tokens / refresh tokens</strong> for each cloud service</li>
     <li><strong>Connection details and credentials</strong> (username, password, SSH key) for WebDAV / SFTP / FTP</li>
@@ -210,7 +206,7 @@
 
   <h2>3. Third-Party Services</h2>
   <p>
-    The App communicates <strong>under your account</strong> with the services you choose to connect. The developer only acts as a client; credentials are used to authenticate your chosen connections. Reporting by older versions is described above.
+    The App communicates <strong>under your account</strong> with the services you choose to connect. The developer only acts as a client; credentials are used to authenticate your chosen connections.
   </p>
   <ul>
     <li>Google Drive (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google LLC Privacy Policy</a>)</li>
@@ -218,7 +214,7 @@
     <li>pCloud (<a href="https://www.pcloud.com/help/privacy-policy" target="_blank" rel="noopener">pCloud Privacy Policy</a>)</li>
     <li>WebDAV / SFTP / FTP servers (any server you specify)</li>
   </ul>
-  <p>Data handling at these services is governed by each provider's privacy policy. Older versions may use <a href="https://sentry.io/privacy/">Sentry</a> for diagnostic reporting. See section 2.2 for the applicable builds and reporting-disable scope.</p>
+  <p>Data handling at these services is governed by each provider's privacy policy.</p>
 
   <h2>4. OS Permissions</h2>
   <p>The following permissions support these features. Request timing depends on the OS, app initialization, and feature settings:</p>
@@ -255,7 +251,7 @@
 
   <h2>8. International Data Transfers</h2>
   <p>
-    File contents do not pass through the developer's servers. Your chosen services may store data outside your country. Diagnostics already sent to Sentry by older versions may also be stored abroad. See each service's privacy policy for details.
+    File contents do not pass through the developer's servers. Your chosen services may store data outside your country. See each service's privacy policy for details.
   </p>
 
   <h2>9. GDPR / CCPA</h2>
@@ -269,7 +265,7 @@
   <ul>
     <li>Deleting a saved connection removes its saved connection record and connection-specific credentials. Closing a connection or leaving a screen is not the same as deleting it.</li>
     <li>For Google, removing a connection does not necessarily sign out the Google SDK or remove its retained authorization. Credentials may remain in iOS Keychain after uninstalling. Revoke FileSync access in your Google Account third-party connections settings to withdraw Google authorization.</li>
-    <li>You can also revoke app access in the service's authorization settings. Deleting device data does not delete diagnostic information already sent</li>
+    <li>You can also revoke app access in the service's authorization settings</li>
   </ul>
   <h3>10.2 Files already uploaded</h3>
   <p>Delete them directly from each cloud / server's management UI or official app. The App also supports delete operations.</p>
@@ -293,25 +289,12 @@
   <h2>13. Summary</h2>
   <p>FileSync is built on the principles of "local-first" and "privacy by design":</p>
   <ul>
-    <li>Credentials authenticate your chosen connections; section 2.2 identifies builds with automatic diagnostic reporting disabled</li>
+    <li>Credentials authenticate your chosen connections</li>
     <li>File contents do not pass through the developer's servers</li>
     <li>Credentials are protected in secure storage on the device</li>
-    <li>Data is not sold. Transmissions to your chosen services, local logs, and diagnostic reporting by older versions are described above</li>
+    <li>Data is not sold</li>
     <li>No ads or tracking</li>
   </ul>
-
-  <div class="changelog">
-    <strong>Changelog</strong>
-    <ul>
-      <li>2026-11-11: Clarified Google data categories, local retention and connection deletion versus Google authorization</li>
-      <li>2026-11-09: Clarified Google API data use and the Limited Use commitment</li>
-      <li>2026-10-29: Published the updated diagnostic reporting policy</li>
-      <li>2026-10-27: Identified builds with automatic diagnostic reporting disabled and clarified older versions, local logs, and manual sharing</li>
-      <li>2026-10-21: Aligned diagnostic/performance reporting, local storage, and connection encryption descriptions</li>
-      <li>2026-06-15: Added explanation of crash reports and diagnostic logs through Sentry</li>
-      <li>2026-05-03: First published</li>
-    </ul>
-  </div>
 
   <div class="legal-footer">
     <p><a href="/filesync/">FileSync</a> / <a href="./terms_en.html">Terms of Service</a></p>
